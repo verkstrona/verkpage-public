@@ -350,6 +350,15 @@ p {
   }
 }
 
+footer {
+  padding-top: 4.8rem;
+  padding-bottom: 2.4rem;
+}
+
+.p-footer {
+  font-size: 1.4rem;
+}
+
 /* mapa */
 .basic-info {
   display: none;
