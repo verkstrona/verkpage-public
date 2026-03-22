@@ -1,0 +1,44 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "brands": "Our Brands",
+    "contact": "Contact",
+    "shop": "Shop"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  },
+  "HomePage": {
+    "title": "Verk Group",
+    "subheading": "Global trade. Modern logistics. Strong brands.",
+    "description1": "We sell on the biggest marketplaces and develop our own brands, reaching customers internationally. ",
+    "description2": "From warehousing to delivery — we handle the entire process.",
+    "aboutLink": "About Us",
+    "brandsLink": "Visit Shop",
+    "aboutHeading": "About Us",
+    "aboutSubheading": "Building modern commerce based on data, logistics, and strong brands.",
+    "aboutDescription1": "Verk Group develops sales in the e-commerce model, focusing on quality service and customer trust. Our shop Verk.sklep.pl has been present on the market since 2019 and has received thousands of positive reviews.",
+    "aboutDescription2": "We have thousands of verified reviews, with as much as 97% being positive ratings. We have been distinguished with, among others, the “Gold” badge and “I listen to my customers,” which confirms our approach to quality and service.",
+    "aboutDescription3": "We fulfill orders in multiple product categories, ensuring efficient logistics and timely delivery.",
+    "reviewsLink": "See Reviews",
+    "learnMoreLink": "Learn More",
+    "brandsHeading": "Our Brands",
+    "brandsSubheading": "We create and develop brands tailored to the needs of the modern market.",
+    "brandsDescription1": "The Verk Group portfolio includes private labels that we develop based on market analysis and sales experience. Each of them responds to specific customer needs and is distributed in many European countries.",
+    "brandsSectionLink": "Meet Our Brands",
+    "contactHeading": "Contact",
+    "contactSubheading": "Have questions or want to start cooperation? Contact us.",
+    "contactDescription": "We are open to business cooperation, sales development, and new projects. Contact us to discuss cooperation opportunities.",
+    "contactLink": "Contact us"
+  },
+  "AboutPage": {
+    "title": "About Verk!"
+  },
+  "contactPage": {
+    "title": "Contact us!"
+  },
+  "BrandsPage": {
+    "title": "Our Brands"
+  }
+}

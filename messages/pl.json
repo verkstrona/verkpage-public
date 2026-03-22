@@ -1,0 +1,44 @@
+{
+  "Navigation": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "brands": "Nasze Marki",
+    "contact": "Kontakt",
+    "shop": "Sklep"
+  },
+  "Footer": {
+    "rights": "Wszelkie prawa zastrzeżone."
+  },
+  "HomePage": {
+    "title": "Verk Group",
+    "subheading": "Globalny handel. Nowoczesna logistyka. Silne marki.",
+    "description1": "Sprzedajemy na największych rynkach i rozwijamy własne marki, docierając do klientów międzynarodowo.",
+    "description2": "Od magazynowania po dostawę — zajmujemy się całym procesem.",
+    "aboutLink": "O Nas",
+    "brandsLink": "Odwiedź Sklep",
+    "aboutHeading": "O Nas",
+    "aboutSubheading": "Budujemy nowoczesny handel oparty na danych, logistyce i silnych markach.",
+    "aboutDescription1": "Verk Group rozwija sprzedaż w modelu e-commerce, koncentrując się na jakości obsługi i zaufaniu klientów. Nasz sklep Verk.sklep.pl jest obecny na rynku od 2019 roku i zdobył tysiące pozytywnych opinii.",
+    "aboutDescription2": "Posiadamy tysiące zweryfikowanych opinii, z czego aż 97% to oceny pozytywne. Zostaliśmy wyróżnieni m.in. odznaką „Złota” oraz „Słucham swoich klientów”, co potwierdza nasze podejście do jakości i obsługi.",
+    "aboutDescription3": "Realizujemy zamówienia w wielu kategoriach produktowych, zapewniając sprawną logistykę i terminową dostawę.",
+    "reviewsLink": "Zobacz Opinie",
+    "learnMoreLink": "Dowiedz się więcej",
+    "brandsHeading": "Nasze Marki",
+    "brandsSubheading": "Tworzymy i rozwijamy marki dopasowane do potrzeb nowoczesnego rynku.",
+    "brandsDescription1": "W portfolio Verk Group znajdują się marki własne, które rozwijamy w oparciu o analizę rynku i doświadczenie sprzedażowe. Każda z nich odpowiada na konkretne potrzeby klientów i jest dystrybuowana w wielu krajach Europy.",
+    "brandsSectionLink": "Poznaj Nasze Marki",
+    "contactHeading": "Kontakt",
+    "contactSubheading": "Masz pytania lub chcesz rozpocząć współpracę? Skontaktuj się z nami.",
+    "contactDescription": "Jesteśmy otwarci na współpracę biznesową, rozwój sprzedaży oraz nowe projekty. Skontaktuj się z nami, aby porozmawiać o możliwościach współpracy.",
+    "contactLink": "Skontaktuj się z nami"
+  },
+  "AboutPage": {
+    "title": "O Verk!"
+  },
+  "contactPage": {
+    "title": "Skontaktuj się z nami!"
+  },
+  "BrandsPage": {
+    "title": "Nasze Marki"
+  }
+}
