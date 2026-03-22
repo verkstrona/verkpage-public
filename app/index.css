@@ -344,10 +344,9 @@ p {
   font-weight: 300;
 }
 
-@media (max-width: 32em) {
+@media (max-width: 40em) {
   .red-section p {
-    font-size: 0.7rem;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 }
 
