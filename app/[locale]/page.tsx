@@ -91,9 +91,9 @@ export default function HomePage() {
       </section>
       <section className="p-4 bg-[#AD2B10] text-[#fbf4f3] red-section">
         <div className="container flex gap-12 justify-center max-sm:gap-8">
-          <p className="text-sm">System Wiarygodnych Opinii</p>
-          <p className="text-sm">Dom 2025 -4 miesjce</p>
-          <p className="text-sm">Słucham Swoich Klientów -Złota Odznaka</p>
+          <p className="red-p">System Wiarygodnych Opinii</p>
+          <p className="red-p">Dom 2025 -4 miesjce</p>
+          <p className="red-p">Słucham Swoich Klientów -Złota Odznaka</p>
         </div>
       </section>
       <section className="about-section my-0 overflow-hidden">
