@@ -1,6 +1,6 @@
 import { Poppins } from "next/font/google";
 import type { Metadata } from "next";
-import "@/app/index.css";
+import "@/app/globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 
 import HeaderReveal from "../components/HeaderReveal";

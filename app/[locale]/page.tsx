@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import KV from "@/public/kv3.png";
 import KV4 from "@/public/kv4.png";
-import Couriers from "../components/Couriers";
 import UseTransition from "../components/TextTransitions";
 import IMGMap from "@/public/mapa3.png";
 import IMGgrid1 from "@/public/homeGrid1.png";
@@ -13,6 +12,7 @@ import IMGgrid4 from "@/public/homeGrid4.png";
 import IMGgrid5 from "@/public/homeGrid5.png";
 import IMGgrid6 from "@/public/homeGrid6.png";
 import RevealingSections from "../components/revealingSections";
+import Partners from "../components/Partners";
 
 export default function HomePage() {
   const t = useTranslations("HomePage");
@@ -59,7 +59,9 @@ export default function HomePage() {
         />
       </div>
 
-      <Couriers />
+      <RevealingSections goinUp={false}>
+        <Partners />
+      </RevealingSections>
 
       <section className="about-section relative my-0 overflow-hidden">
         <div className="container">
