@@ -46,6 +46,11 @@ export default function NavDesktop() {
           {t("shop")}
         </Link>
       </li>
+      <li>
+        <Link href="https://internetowa-hurtownia.pl/" target="_blank">
+          {t("warehouse")}
+        </Link>
+      </li>
     </ul>
   );
 }

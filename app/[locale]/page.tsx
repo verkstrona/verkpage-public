@@ -18,7 +18,7 @@ export default function HomePage() {
   const t = useTranslations("HomePage");
   return (
     <>
-      <div className="hero-section relative">
+      <section className="hero-section relative">
         <div className="text-box flex flex-col gap-2">
           <h1 className="text-center uppercase pb-6">{t("title")}</h1>
           {/* <h2 className="pb-4">{t("subheading")}</h2> */}
@@ -57,7 +57,7 @@ export default function HomePage() {
           objectFit="cover"
           className="z-[-1]"
         />
-      </div>
+      </section>
 
       <RevealingSections goinUp={false}>
         <Partners />
