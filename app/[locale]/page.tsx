@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import KV from "@/public/kv3.png";
+import KV from "@/public/kv3New.png";
 import KV4 from "@/public/kv4.png";
 import UseTransition from "../components/TextTransitions";
 import IMGMap from "@/public/mapa4.png";
