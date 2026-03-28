@@ -12,7 +12,7 @@ export default function NavDesktop() {
       <li>
         <Link
           href="/"
-          className={`${pathname === "/" || pathname === "/en" || pathname === "/pl" ? "border-b-2 border-b-[#AD2B10]" : "opacity-85 hover:opacity-100 transition-opacity duration-300"}`}
+          className={`${pathname === "/" || pathname === "/en" || pathname === "/pl" ? "border-b-2 border-b-[#CD1C18]" : "opacity-85 hover:opacity-100 transition-opacity duration-300"}`}
         >
           {t("home")}
         </Link>
@@ -20,7 +20,7 @@ export default function NavDesktop() {
       <li>
         <Link
           href="/about-us"
-          className={`${pathname === "/en/about-us" || pathname === "/o-nas" ? "border-b-2 border-b-[#AD2B10]" : "opacity-85 hover:opacity-100 transition-opacity duration-300"}`}
+          className={`${pathname === "/en/about-us" || pathname === "/o-nas" ? "border-b-2 border-b-[#CD1C18]" : "opacity-85 hover:opacity-100 transition-opacity duration-300"}`}
         >
           {t("about")}
         </Link>
@@ -28,7 +28,7 @@ export default function NavDesktop() {
       <li>
         <Link
           href="/our-brands"
-          className={`${pathname === "/en/our-brands" || pathname === "/nasze-marki" ? "border-b-2 border-b-[#AD2B10]" : "opacity-85 hover:opacity-100 transition-opacity duration-300"}`}
+          className={`${pathname === "/en/our-brands" || pathname === "/nasze-marki" ? "border-b-2 border-b-[#CD1C18]" : "opacity-85 hover:opacity-100 transition-opacity duration-300"}`}
         >
           {t("brands")}
         </Link>
@@ -36,7 +36,7 @@ export default function NavDesktop() {
       <li>
         <Link
           href="/contact"
-          className={`${pathname === "/en/contact" || pathname === "/kontakt" ? "border-b-2 border-b-[#AD2B10]" : "opacity-85 hover:opacity-100 transition-opacity duration-300"}`}
+          className={`${pathname === "/en/contact" || pathname === "/kontakt" ? "border-b-2 border-b-[#CD1C18]" : "opacity-85 hover:opacity-100 transition-opacity duration-300"}`}
         >
           {t("contact")}
         </Link>

@@ -4,13 +4,13 @@ import Link from "next/link";
 import KV from "@/public/kv3.png";
 import KV4 from "@/public/kv4.png";
 import UseTransition from "../components/TextTransitions";
-import IMGMap from "@/public/mapa3.png";
-import IMGgrid1 from "@/public/homeGrid1.png";
-import IMGgrid2 from "@/public/homeGrid2.png";
-import IMGgrid3 from "@/public/homeGrid3.png";
+import IMGMap from "@/public/mapa4.png";
+import IMGgrid1 from "@/public/homeGrid1New.png";
+import IMGgrid2 from "@/public/homeGrid2New.png";
+import IMGgrid3 from "@/public/homeGrid3New.png";
 import IMGgrid4 from "@/public/homeGrid4.png";
 import IMGgrid5 from "@/public/homeGrid5.png";
-import IMGgrid6 from "@/public/homeGrid6.png";
+import IMGgrid6 from "@/public/homeGrid6New.png";
 import RevealingSections from "../components/revealingSections";
 import Partners from "../components/Partners";
 
@@ -96,7 +96,7 @@ export default function HomePage() {
           className="w-full h-auto z-[-1] opacity-40 transform translate-x-24 object-contain object-right max-[930px]:object-cover max-[930px]:object-left max-sm:object-center max-sm:translate-x-0 max-sm:opacity-10"
         />
       </section>
-      <section className="p-4 bg-[#AD2B10] text-[#fbf4f3] red-section">
+      <section className="p-4 bg-[#CD1C18] text-[#fbf4f3] red-section">
         <RevealingSections goinUp={false}>
           <div className="container flex gap-12 justify-center max-sm:gap-8">
             <p className="red-p">{t("pros1")}</p>

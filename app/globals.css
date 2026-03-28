@@ -6,9 +6,17 @@ Base	5%	10%	15%	20%	25%	30%	35%	40%	45%	50%	55%	60%	65%	70%	75%	80%	85%	90%	95%
 #AD2B10	#A4290F	#9C270E	#93250E	#8A220D	#82200C	#791E0B	#701C0A	#681A0A	#5F1809	#571608	#4E1307	#451106	#3D0F06	#340D05	#2B0B04	#230903	#1A0602	#110402	#090201
 #AD2B10	#B1361C	#B54028	#B94B34	#BD5540	#C2604C	#C66B58	#CA7564	#CE8070	#D28A7C	#D69588	#DAA093	#DEAA9F	#E2B5AB	#E6BFB7	#EBCAC3	#EFD5CF	#F3DFDB	#F7EAE7	#FBF4F3
 
+
+chili-red #CD1C18
+
+Base	5%	10%	15%	20%	25%	30%	35%	40%	45%	50%	55%	60%	65%	70%	75%	80%	85%	90%	95%
+#CD1C18	#C31B17	#B91916	#AE1814	#A41613	#9A1512	#901411	#851210	#7B110E	#710F0D	#670E0C	#5C0D0B	#520B0A	#480A08	#3E0807	#330706	#290605	#1F0404	#150302	#0A0101
+#CD1C18	#D02724	#D2332F	#D53E3B	#D74946	#DA5552	#DC605D	#DF6B69	#E17774	#E48280	#E68E8C	#E99997	#EBA4A3	#EEB0AE	#F0BBBA	#F3C6C5	#F5D2D1	#F8DDDC	#FAE8E8	#FDF4F3
+
+
 */
 
-:root {
+/* :root {
   --background-color: #fbf4f3;
   --font-color: #090201;
   --font-color2: #1a0602;
@@ -29,6 +37,28 @@ Base	5%	10%	15%	20%	25%	30%	35%	40%	45%	50%	55%	60%	65%	70%	75%	80%	85%	90%	95%
   --input-background: #000;
   --accent-color: #ad2b10;
   --accent-opa: rgba(173, 43, 16, 0.5);
+} */
+:root {
+  --background-color: #fbf4f3;
+  --font-color: #090201;
+  --font-color2: #150302;
+  --input-background: #fff;
+
+  --accent-color: rgb(205, 28, 24);
+  --accent-opa: rgba(205, 28, 24, 0.6);
+  --dark-image: block;
+  --white-image: none;
+}
+
+[data-theme="dark"] {
+  --dark-image: none;
+  --white-image: block;
+  --background-color: #090201;
+  --font-color: #fbf4f3;
+  --font-color2: #f3dfdb;
+  --input-background: #000;
+  --accent-color: #cd1c18;
+  --accent-opa: rgba(205, 28, 24, 0.7);
 }
 
 .image-dark {
