@@ -70,7 +70,7 @@ export default function HomePage() {
             <h2 className="opacity-75">{t("aboutHeading")}</h2>
             <div className="px-4 pt-12">
               <h3 className="opacity-90">{t("aboutSubheading")}</h3>
-              <div className="py-8 w-full sm:w-[60%] text-justify">
+              <div className="py-8 w-full sm:w-[60%] text-justify ">
                 <p className="pb-4">{t("aboutDescription1")}</p>
                 <p className="pb-4">{t("aboutDescription2")}</p>
                 <p>{t("aboutDescription3")}</p>
@@ -94,7 +94,7 @@ export default function HomePage() {
           alt="map"
           src={IMGMap}
           fill
-          className="w-full h-auto z-[-1] opacity-40 transform translate-x-24 object-contain object-right max-[930px]:object-cover max-[930px]:object-left max-sm:object-center max-sm:translate-x-0 max-sm:opacity-10"
+          className="w-full h-auto z-[-1] opacity-40 transform translate-x-24 object-contain object-right max-[930px]:object-cover max-[930px]:object-left max-[930px]:opacity-20 max-sm:object-center max-sm:translate-x-0 max-sm:opacity-10"
         />
       </section>
       <section className="p-4 bg-[#CD1C18] text-[#fbf4f3] red-section">
