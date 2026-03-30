@@ -9,6 +9,8 @@ import { ThemeProvider } from "../context/ThemeContext";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Footer from "../components/Footer";
+import { CookieProvider } from "../context/CookieContext";
+import CookieBanner from "../components/CookieBanner";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -37,11 +39,14 @@ export default async function RootLayout({ children, params }: Props) {
       <body className={`${poppins.variable} antialiased`}>
         <NextIntlClientProvider>
           <ThemeProvider>
-            <HeaderReveal>
-              <Navigation />
-            </HeaderReveal>
-            {children}
-            <Footer />
+            <CookieProvider>
+              <HeaderReveal>
+                <Navigation />
+              </HeaderReveal>
+              {children}
+              <CookieBanner />
+              <Footer />
+            </CookieProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

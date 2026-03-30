@@ -83,6 +83,37 @@ Base	5%	10%	15%	20%	25%	30%	35%	40%	45%	50%	55%	60%	65%	70%	75%	80%	85%	90%	95%
   fill: var(--background-color);
 }
 
+.bg-cookies {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+.btn-accept,
+.btn-decline {
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 0.2rem solid var(--background-color);
+  font-weight: 600;
+}
+.btn-accept {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+}
+.btn-decline {
+  background-color: transparent;
+  color: var(--background-color);
+}
+
+.btn-accept:hover,
+.btn-decline:hover {
+  opacity: 80%;
+  opacity: 80%;
+}
+
+.map-p {
+  font-size: 1.4rem;
+  opacity: 80%;
+}
+
 * {
   box-sizing: border-box;
 }

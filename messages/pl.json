@@ -7,6 +7,14 @@
     "shop": "Sklep",
     "warehouse": "Hurtownia"
   },
+  "CookieBanner": {
+    "message": "Ta strona korzysta z cookies (Google Maps).",
+    "accept": "Akceptuj",
+    "decline": "Odrzuć"
+  },
+  "Map": {
+    "title": "Mapa jest zablokowana do czasu zaakceptowania cookies."
+  },
   "Footer": {
     "rights": "Wszelkie prawa zastrzeżone."
   },

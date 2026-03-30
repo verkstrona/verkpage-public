@@ -7,6 +7,14 @@
     "shop": "Shop",
     "warehouse": "Warehouse"
   },
+  "CookieBanner": {
+    "message": "This site uses cookies (Google Maps).",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "Map": {
+    "title": "The map is blocked until you accept cookies."
+  },
   "Footer": {
     "rights": "All rights reserved."
   },
