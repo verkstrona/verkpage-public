@@ -5,6 +5,7 @@ import IMGallegro from "@/public/AllegroLogo.png";
 import IMGtemu from "@/public/temuLogo.png";
 import IMGceneo from "@/public/CeneoLogo.png";
 import IMGverk from "@/public/LogoVerk.png";
+import IMGdivo from "@/public/LogoDivo.png";
 import Image from "next/image";
 
 export default function Partners() {
@@ -35,6 +36,9 @@ export default function Partners() {
           <div>
             <Image src={IMGverk} alt="Verk" className="card" />
           </div>
+          <div>
+            <Image src={IMGdivo} alt="Divo" className="card" />
+          </div>
         </div>
         <div aria-hidden className="group">
           <div className="last-card ">
@@ -59,6 +63,9 @@ export default function Partners() {
           </div>
           <div>
             <Image src={IMGverk} alt="Verk" className="card" />
+          </div>
+          <div>
+            <Image src={IMGdivo} alt="Divo" className="card" />
           </div>
         </div>
       </div>

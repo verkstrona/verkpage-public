@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import KV from "@/public/kv3New.png";
-import KV4 from "@/public/kv4.png";
+import KV5 from "@/public/kv5.png";
 import UseTransition from "../components/TextTransitions";
 import IMGMap from "@/public/mapa4.png";
 import IMGgrid1 from "@/public/homeGrid1New.png";
@@ -52,7 +52,7 @@ export default function HomePage() {
         </div>
         <Image
           alt="Key Visual"
-          src={KV4}
+          src={KV5}
           fill
           objectPosition="center"
           objectFit="cover"
