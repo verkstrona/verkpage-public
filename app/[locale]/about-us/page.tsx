@@ -62,7 +62,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="flex gap-16 py-8 justify-center w-full">
-                  <Link href="/contact" target="_blank" className="btn-primary">
+                  <Link href="/contact" className="btn-primary">
                     {t("aboutuscontactLink")}
                   </Link>
                 </div>
