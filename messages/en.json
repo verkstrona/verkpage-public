@@ -70,6 +70,28 @@
     "title": "Contact us!"
   },
   "BrandsPage": {
-    "title": "Our Brands"
+    "title": "Our Brands",
+    "subheading": "We create and develop brands tailored to the needs of the modern e-commerce market.",
+    "description1": "Each of our brands is created based on sales experience, market analysis, and customer needs in various segments.",
+    "disclaimer1": "The Verk Group portfolio includes private labels developed in various product categories.",
+    "disclaimer2": "Each of them has a separate identity while fitting into a consistent business model based on quality, availability, and scalability.",
+    "brandsListHeading": "Our Brands",
+    "Verkheading": "Verk Group",
+    "Verkdescription1": "The main brand developed within the wide product portfolio. It includes diverse categories — from electronics and accessories to everyday products.",
+    "Verkdescription2": "It focuses on availability, wide assortment, and tailoring to the needs of the e-commerce market.",
+    "Divoheading": "Divo",
+    "Divodescription1": "A brand developed with modern lifestyle and online sales in mind.",
+    "Divodescription2": "It offers products in categories such as home and garden, sports and hobbies, and more, combining quality with attractive design.",
+    "Opexheading": "Opex Tools",
+    "Opexdescription1": "A brand focused on tools and equipment for home improvement and construction.",
+    "Opexdescription2": "It offers a wide range of products, from hand tools  to power tools, designed to meet the needs of both DIY enthusiasts and professionals.",
+    "Przyjacieleheading": "Przyjaciele",
+    "Przyjaciedescription1": "A brand aimed at the segment of everyday products and lifestyle.",
+    "Przyjaciedescription2": "Created with the idea of a broad audience, combining functionality with an accessible design.",
+    "wholesaleLink": "Wholesale Offer",
+    "shopLink": "Visit Shop",
+    "brandsDevelopmentHeading": "Brand Development",
+    "brandsDevelopmentDescription1": "We develop our brands based on market analysis, sales data, and observation of market trends.",
+    "brandsDevelopmentDescription2": "This allows us to effectively introduce and scale products across various market segments."
   }
 }

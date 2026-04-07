@@ -70,6 +70,28 @@
     "title": "Skontaktuj się z nami!"
   },
   "BrandsPage": {
-    "title": "Nasze Marki"
+    "title": "Nasze Marki",
+    "subheading": "Tworzymy i rozwijamy marki dopasowane do potrzeb nowoczesnego rynku e-commerce.",
+    "description1": "Nasze marki powstają w oparciu o doświadczenie sprzedażowe, analizę rynku oraz potrzeby klientów w różnych segmentach.",
+    "disclaimer1": "Portfolio Verk Group obejmuje marki własne rozwijane w różnych kategoriach produktowych.",
+    "disclaimer2": "Każda z nich posiada odrębną tożsamość, jednocześnie wpisując się w spójny model biznesowy oparty na jakości, dostępności i skalowalności.",
+    "brandsListHeading": "Nasze Marki",
+    "Verkheading": "Verk Group",
+    "Verkdescription1": "Marka główna rozwijana w ramach szerokiego portfolio produktowego. Obejmuje różnorodne kategorie — od elektroniki i akcesoriów, po produkty codziennego użytku.",
+    "Verkdescription2": "Skupia się na dostępności, szerokim asortymencie oraz dopasowaniu do potrzeb rynku e-commerce.",
+    "Divoheading": "Divo",
+    "Divodescription1": "Marka rozwijana z myślą o nowoczesnym stylu życia i sprzedaży online.",
+    "Divodescription2": "Koncentruje się na produktach dopasowanych do aktualnych trendów oraz dynamicznie zmieniających się potrzeb klientów.",
+    "Opexheading": "Opex Tools",
+    "Opexdescription1": "Marka skoncentrowana na narzędziach i produktach technicznych.",
+    "Opexdescription2": "Odpowiada na potrzeby klientów poszukujących funkcjonalnych i praktycznych rozwiązań do pracy i codziennego użytkowania.",
+    "Przyjacieleheading": "Przyjaciele",
+    "Przyjaciedescription1": "Marka skierowana do segmentu produktów codziennego użytku i lifestyle.",
+    "Przyjaciedescription2": "Tworzona z myślą o szerokim gronie odbiorców, łącząc funkcjonalność z przystępną formą.",
+    "wholesaleLink": "Zobacz ofertę hurtową",
+    "shopLink": "Przejdź do sklepu detalicznego",
+    "brandsDevelopmentHeading": "Rozwój Marek",
+    "brandsDevelopmentDescription1": "Rozwój marek w Verk Group opiera się na analizie danych, doświadczeniu sprzedażowym oraz obserwacji trendów rynkowych.",
+    "brandsDevelopmentDescription2": "Dzięki temu skutecznie wprowadzamy i skalujemy produkty w różnych segmentach rynku."
   }
 }

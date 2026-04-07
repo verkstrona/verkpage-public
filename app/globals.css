@@ -43,7 +43,7 @@ Base	5%	10%	15%	20%	25%	30%	35%	40%	45%	50%	55%	60%	65%	70%	75%	80%	85%	90%	95%
   --font-color: #090201;
   --font-color2: #150302;
   --input-background: #fff;
-  --box-shadow: rgba(0, 0, 0, 0.2) 0.5rem 0.5rem 1rem;
+  --box-shadow: rgba(0, 0, 0, 0.1) 0.5rem 0.5rem 1rem;
   --text-shadow: rgba(0, 0, 0, 0.2) 0rem 0rem 2rem 0rem;
 
   --accent-color: rgb(205, 28, 24);
@@ -62,7 +62,7 @@ Base	5%	10%	15%	20%	25%	30%	35%	40%	45%	50%	55%	60%	65%	70%	75%	80%	85%	90%	95%
   --accent-color: #cd1c18;
   --accent-opa: rgba(205, 28, 24, 0.7);
   --text-shadow: rgba(255, 255, 255, 0.2) 0.1rem 0.1rem 0.2rem;
-  --box-shadow: rgba(255, 255, 255, 0.2) 0rem 0rem 2rem 0rem;
+  --box-shadow: rgba(255, 255, 255, 0.1) 0rem 0rem 2rem 0rem;
 }
 
 .image-dark {
@@ -687,4 +687,77 @@ footer {
   font-size: 4.8rem;
   font-weight: 700;
   opacity: 90%;
+}
+
+/* ******* OUR BRANDS PAGE ******** */
+
+.disclaimer-section {
+  border-bottom: 1px solid rgba(128, 131, 136, 0.1);
+}
+
+.brands-disclaimer {
+  text-align: center;
+  padding: 3.2rem;
+  padding-top: 4.8rem;
+  padding-bottom: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+
+.brands-section {
+  padding: 3.2rem;
+  padding-top: 9.2rem;
+  padding-bottom: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+
+.brands-disclaimer p {
+  font-size: 1.4rem;
+  opacity: 80%;
+}
+
+.brands-box {
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.brands-textbox {
+  padding-right: 1.8rem;
+}
+
+.brands-box img {
+  box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 56em) {
+  .brands-section h3 {
+    text-align: center;
+  }
+
+  .brands-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    align-items: center;
+    box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.1);
+    max-width: 40rem;
+    max-width: 40rem;
+  }
+  .brands-textbox {
+    margin: 0 auto;
+    padding: 1.8rem;
+    padding-top: 0rem;
+    text-align: justify;
+  }
+  .brands-box img {
+    box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.brandsdev-section {
+  padding: 3.2rem;
+  padding-top: 9.2rem;
+  padding-bottom: 3.2rem;
 }
