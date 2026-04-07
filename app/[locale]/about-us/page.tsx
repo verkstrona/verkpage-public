@@ -79,7 +79,7 @@ export default function AboutPage() {
           <div className="container">
             <h2 className="opacity-75 pb-12">{t("wherewesaleHeading")}</h2>
             <div className="wherewework-box">
-              <div className="grid grid-cols-4 gap-6 max-[960px]:grid-cols-8">
+              <div className="grid grid-cols-4 gap-6 max-[960px]:grid-cols-8 max-[960px]:gap-2">
                 <Image alt="map" src={flagcz} />
                 <Image alt="map" src={flagnl} />
                 <Image alt="map" src={flagsk} />

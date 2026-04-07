@@ -1,7 +1,7 @@
 "use client";
 
 import CountUp from "react-countup";
-import { use, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import RevealingSections from "./revealingSections";
 
