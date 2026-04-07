@@ -1,4 +1,3 @@
-import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import KV from "@/public/aboutuskv.png";
@@ -24,6 +23,7 @@ import flagct from "@/public/flagct.png";
 import UseTransitionAbout from "@/app/components/TextTransitionsAbout";
 import RevealingSections from "@/app/components/revealingSections";
 import CountUpComponent from "@/app/components/CountUp";
+import Link from "next/link";
 
 export default function AboutPage() {
   const t = useTranslations("AboutPage");
@@ -32,22 +32,12 @@ export default function AboutPage() {
       <section className="hero-section-about relative">
         <div className="text-box flex flex-col gap-2 container">
           <h1 className="text-center uppercase pb-6">{t("title")}</h1>
-          {/* <h2 className="pb-4">{t("subheading")}</h2> */}
-
           <h2 className="text-center">
             <UseTransitionAbout />
           </h2>
           <RevealingSections goinUp={false}>
             <p>{t("description1")}</p>
             <p>{t("description2")}</p>
-            {/* <div className="hero-btn-box pt-10">
-          <Link href="/about-us" className="btn1">
-          {t("aboutLink")}
-          </Link>
-          <Link href="https://verk.sklep.pl/" target="_blank" className="btn2">
-          {t("brandsLink")}
-          </Link>
-          </div> */}
           </RevealingSections>
         </div>
         <Image
@@ -147,18 +137,6 @@ export default function AboutPage() {
                     <p className="pb-4">{t("trustandscaleDescription2")}</p>
                   </div>
                 </div>
-                {/* <div className="flex gap-16 py-8 justify-center w-full md:w-[60%]  items-center max-[525px]:flex-col">
-                  <Link
-                  href="https://www.opineo.pl/opinie/verk-sklep-pl"
-                  target="_blank"
-                  className="btn-primary"
-                  >
-                  {t("reviewsLink")}
-                  </Link>
-                  <Link href="/about-us" className="btn-secondary">
-                  {t("learnMoreLink")}
-                  </Link>
-                  </div> */}
               </div>
               <div className="gridRowSmall-1">
                 <Image alt="map" src={KV3} />
