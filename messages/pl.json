@@ -45,7 +45,26 @@
     "contactLink": "Skontaktuj się z nami"
   },
   "AboutPage": {
-    "title": "O Verk!"
+    "title": "O Nas",
+    "subheading": "Analiza rynku. Rozwój oferty. Sprzedaż detaliczna. Sprzedaż hurtowa. Logistyka i dystrybucja",
+    "description1": "Verk Group to firma rozwijająca sprzedaż w modelu e-commerce i dystrybucji, łącząca handel detaliczny i hurtowy. Od 2019 roku budujemy naszą pozycję na rynku, rozwijając sprzedaż poprzez własne kanały oraz współpracę z platformami marketplace.",
+    "description2": "Naszym celem jest tworzenie skalowalnego modelu sprzedaży, który łączy rozwój marek własnych, szeroki asortyment oraz efektywną logistykę. Obsługujemy klientów indywidualnych i biznesowych, dostarczając produkty w wielu kategoriach — od elektroniki, przez dom i ogród, po sport i hobby.",
+    "howweworkHeading": "Jak Działamy?",
+    "howweworkDescription1": "Działamy w oparciu o zintegrowany model sprzedaży, który obejmuje rozwój produktu, sprzedaż oraz logistykę.  Wykorzystujemy doświadczenie rynkowe i analizę danych, aby skutecznie rozwijać ofertę i dopasowywać ją do potrzeb klientów.",
+    "howweworkDescription2": "Nasza działalność obejmuje zarówno sprzedaż detaliczną poprzez sklep internetowy, jak i obsługę zamówień hurtowych.  Dzięki temu jesteśmy w stanie skalować biznes i docierać do różnych segmentów rynku.",
+    "aboutuscontactLink": "Skontaktuj się z nami",
+    "wherewesaleHeading": "Gdzie Sprzedajemy?",
+    "wherewesaleDescription1": "Realizujemy sprzedaż i dostawy do wielu krajów Europy, w tym m.in. Polski, Niemiec, Francji, Hiszpanii, Włoch, Holandii, Czech, Słowacji oraz krajów bałtyckich.",
+    "wherewesaleDescription2": "Rozwijamy naszą obecność międzynarodową, stale poszerzając zasięg działalności i dostosowując ofertę do specyfiki lokalnych rynków.",
+    "wherewesaleshopLink": "Odwiedź Sklep",
+    "wherewesalewarehouseLink": "Oferta Hurtowa",
+    "trustandscaleHeading": "Zaufanie i Skala",
+    "trustandscaleDescription1": "Naszą wiarygodność potwierdzają opinie klientów oraz długoletnia obecność na rynku. Od 2019 roku rozwijamy sprzedaż, zdobywając zaufanie tysięcy klientów.",
+    "trustandscaleDescription2": "Posiadamy ponad 4500 opinii, z czego 97% stanowią oceny pozytywne. Zostaliśmy wyróżnieni m.in. odznaką „Złota”, „Słucham swoich klientów” oraz nagrodą „Dom 2025 – wyróżnienie”.",
+    "truststats1": "Opinii klientów",
+    "truststats2": "Pozytywnych ocen",
+    "truststats3": "Od 2019 na rynku",
+    "truststats4": "Wiele kategorii produktowych"
   },
   "ContactPage": {
     "title": "Skontaktuj się z nami!"

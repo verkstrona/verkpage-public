@@ -45,7 +45,26 @@
     "contactLink": "Contact us"
   },
   "AboutPage": {
-    "title": "About Verk!"
+    "title": "About Us",
+    "subheading": "Market analysis. Offer development. Retail sales.  Wholesale. Logistics and distribution",
+    "description1": "Verk Group is a company developing sales in the e-commerce and distribution model, combining retail and wholesale trade. Since 2019, we have been building our position on the market, developing sales through our own channels and cooperation with marketplace platforms.",
+    "description2": "Our goal is to create a scalable sales model that combines the development of private labels, a wide assortment, and efficient logistics. We serve individual and business customers, delivering products in many categories — from electronics, through home and garden, to sports and hobbies.",
+    "howweworkHeading": "How We Work?",
+    "howweworkDescription1": "We operate based on an integrated sales model that includes product development, sales, and logistics. We use market experience and data analysis to effectively develop the offer and tailor it to customer needs.",
+    "howweworkDescription2": "Our activity includes both retail sales through the online store and handling wholesale orders. This allows us to scale the business and reach different market segments.",
+    "aboutuscontactLink": "Contact us",
+    "wherewesaleHeading": "Where We Sell?",
+    "wherewesaleDescription1": "We carry out sales and deliveries to many European countries  including, among others, Poland, Germany, France, Spain, Italy, the Netherlands, the Czech Republic, Slovakia, and the Baltic countries.",
+    "wherewesaleDescription2": "We are developing our international presence, constantly expanding the scope of activity and adapting the offer to the specifics of local markets.",
+    "wherewesaleshopLink": "Visit Shop",
+    "wherewesalewarehouseLink": "Wholesale Offer",
+    "trustandscaleHeading": "Trust and Scale",
+    "trustandscaleDescription1": "Our credibility is confirmed by customer reviews and long-term presence on the market. Since 2019, we have been developing sales, gaining the trust of thousands of customers.",
+    "trustandscaleDescription2": "We have over 4500 reviews, with 97% being positive ratings. We have been distinguished with, among others, the “Gold” badge, “I listen to my customers,” and the “Dom 2025 – distinction” award.",
+    "truststats1": "Reviews",
+    "truststats2": "Positive Ratings",
+    "truststats3": "Since 2019 on the market",
+    "truststats4": "Multiple Product Categories"
   },
   "ContactPage": {
     "title": "Contact us!"

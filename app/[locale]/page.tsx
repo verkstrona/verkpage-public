@@ -54,9 +54,9 @@ export default function HomePage() {
           alt="Key Visual"
           src={KV5}
           fill
-          objectPosition="center"
+          quality={100}
           objectFit="cover"
-          className="z-[-1]"
+          className="z-[-1] max-md:object-left object-center"
         />
       </section>
 
