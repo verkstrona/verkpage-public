@@ -7,7 +7,7 @@ import RevealingSections from "./revealingSections";
 
 export default function CountUpComponent() {
   const t = useTranslations("AboutPage");
-  const ref = useRef();
+  const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
