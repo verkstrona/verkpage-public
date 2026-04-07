@@ -33,8 +33,10 @@ export default function BrandsPage() {
       </section>
       <section className="disclaimer-section">
         <div className="container brands-disclaimer">
-          <p className="pb-4">{t("disclaimer1")}</p>
-          <p>{t("disclaimer2")}</p>
+          <RevealingSections goinUp={false}>
+            <p className="pb-4">{t("disclaimer1")}</p>
+            <p>{t("disclaimer2")}</p>
+          </RevealingSections>
         </div>
       </section>
       <section className="brands-section">
@@ -43,100 +45,114 @@ export default function BrandsPage() {
             {t("brandsListHeading")}
           </h2>
           <div className="grid gap-24 px-4 items-center justify-items-center">
-            <div>
-              <h3 className="opacity-90 pb-8 max-[897px]:hidden">
-                {t("Verkheading")}
-              </h3>
-              <div className="brands-box">
-                <div>
-                  <Image alt="map" src={KVverk} />
-                </div>
-                <div className="flex flex-col gap-4 brands-textbox">
-                  <h3 className="opacity-90 min-[897px]:hidden pb-4">
-                    {t("Verkheading")}
-                  </h3>
-                  <p>{t("Verkdescription1")}</p>
-                  <p>{t("Verkdescription2")}</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h3 className="opacity-90 pb-8 max-[897px]:hidden ">
-                {t("Divoheading")}
-              </h3>
-              <div className="brands-box">
-                <div>
-                  <Image alt="map" src={KVdivo} />
-                </div>
-                <div className="flex flex-col gap-4 brands-textbox">
-                  <h3 className="opacity-90 min-[897px]:hidden pb-4">
-                    {t("Divoheading")}
-                  </h3>
-                  <p>{t("Divodescription1")}</p>
-                  <p>{t("Divodescription2")}</p>
+            <RevealingSections goinUp={true}>
+              <div>
+                <h3 className="opacity-90 pb-8 max-[897px]:hidden">
+                  {t("Verkheading")}
+                </h3>
+                <div className="brands-box">
+                  <div>
+                    <Image alt="map" src={KVverk} />
+                  </div>
+                  <div className="flex flex-col gap-4 brands-textbox">
+                    <h3 className="opacity-90 min-[897px]:hidden pb-4">
+                      {t("Verkheading")}
+                    </h3>
+                    <p>{t("Verkdescription1")}</p>
+                    <p>{t("Verkdescription2")}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <h3 className="opacity-90 pb-8 max-[897px]:hidden">
-                {t("Opexheading")}
-              </h3>
-              <div className="brands-box">
-                <div>
-                  <Image alt="map" src={KVopex} />
-                </div>
-                <div className="flex flex-col gap-4 brands-textbox">
-                  <h3 className="opacity-90 min-[897px]:hidden  pb-4">
-                    {t("Opexheading")}
-                  </h3>
-                  <p>{t("Opexdescription1")}</p>
-                  <p>{t("Opexdescription2")}</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h3 className="opacity-90 pb-8 max-[897px]:hidden ">
-                {t("Przyjacieleheading")}
-              </h3>
-              <div className="brands-box">
-                <div>
-                  <Image alt="map" src={KVprzyjaciele} />
-                </div>
-                <div className="flex flex-col gap-4 brands-textbox">
-                  <h3 className="opacity-90 min-[897px]:hidden pb-4">
-                    {t("Przyjacieleheading")}
-                  </h3>
-                  <p>{t("Przyjaciedescription1")}</p>
-                  <p>{t("Przyjaciedescription2")}</p>
+            </RevealingSections>
+            <RevealingSections goinUp={true}>
+              <div>
+                <h3 className="opacity-90 pb-8 max-[897px]:hidden ">
+                  {t("Divoheading")}
+                </h3>
+                <div className="brands-box">
+                  <div>
+                    <Image alt="map" src={KVdivo} />
+                  </div>
+                  <div className="flex flex-col gap-4 brands-textbox">
+                    <h3 className="opacity-90 min-[897px]:hidden pb-4">
+                      {t("Divoheading")}
+                    </h3>
+                    <p>{t("Divodescription1")}</p>
+                    <p>{t("Divodescription2")}</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </RevealingSections>
+            <RevealingSections goinUp={true}>
+              <div>
+                <h3 className="opacity-90 pb-8 max-[897px]:hidden">
+                  {t("Opexheading")}
+                </h3>
+                <div className="brands-box">
+                  <div>
+                    <Image alt="map" src={KVopex} />
+                  </div>
+                  <div className="flex flex-col gap-4 brands-textbox">
+                    <h3 className="opacity-90 min-[897px]:hidden  pb-4">
+                      {t("Opexheading")}
+                    </h3>
+                    <p>{t("Opexdescription1")}</p>
+                    <p>{t("Opexdescription2")}</p>
+                  </div>
+                </div>
+              </div>
+            </RevealingSections>
+            <RevealingSections goinUp={true}>
+              <div>
+                <h3 className="opacity-90 pb-8 max-[897px]:hidden ">
+                  {t("Przyjacieleheading")}
+                </h3>
+                <div className="brands-box">
+                  <div>
+                    <Image alt="map" src={KVprzyjaciele} />
+                  </div>
+                  <div className="flex flex-col gap-4 brands-textbox">
+                    <h3 className="opacity-90 min-[897px]:hidden pb-4">
+                      {t("Przyjacieleheading")}
+                    </h3>
+                    <p>{t("Przyjaciedescription1")}</p>
+                    <p>{t("Przyjaciedescription2")}</p>
+                  </div>
+                </div>
+              </div>
+            </RevealingSections>
           </div>
-          <div className="flex gap-16 pt-24 justify-center w-full items-center max-[897px]:flex-col">
-            <Link
-              className="btn-primary"
-              href="https://verk.sklep.pl"
-              target="_blank"
-            >
-              {t("shopLink")}
-            </Link>
-            <Link
-              className="btn-secondary"
-              href="https://internetowa-hurtownia.pl/main-cze.html"
-              target="_blank"
-            >
-              {t("wholesaleLink")}
-            </Link>
-          </div>
+          <RevealingSections goinUp={false}>
+            <div className="flex gap-16 pt-24 justify-center w-full items-center max-[897px]:flex-col">
+              <Link
+                className="btn-primary"
+                href="https://verk.sklep.pl"
+                target="_blank"
+              >
+                {t("shopLink")}
+              </Link>
+              <Link
+                className="btn-secondary"
+                href="https://internetowa-hurtownia.pl/main-cze.html"
+                target="_blank"
+              >
+                {t("wholesaleLink")}
+              </Link>
+            </div>
+          </RevealingSections>
         </div>
       </section>
       <section className="brandsdev-section">
-        <div className="container text-center">
-          <h2 className="opacity-75 pb-12">{t("brandsDevelopmentHeading")}</h2>
-          <p>{t("brandsDevelopmentDescription1")}</p>
-          <p className="pb-8">{t("brandsDevelopmentDescription2")}</p>
-          <Image src={KV2} alt="kv" className="w-full h-auto" />
-        </div>
+        <RevealingSections goinUp={false}>
+          <div className="container text-center">
+            <h2 className="opacity-75 pb-12">
+              {t("brandsDevelopmentHeading")}
+            </h2>
+            <p>{t("brandsDevelopmentDescription1")}</p>
+            <p className="pb-8">{t("brandsDevelopmentDescription2")}</p>
+            <Image src={KV2} alt="kv" className="w-full h-auto" />
+          </div>
+        </RevealingSections>
       </section>
     </>
   );
