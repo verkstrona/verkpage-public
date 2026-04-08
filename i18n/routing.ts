@@ -21,5 +21,9 @@ export const routing = defineRouting({
       pl: "/nasze-marki",
       en: "/our-brands",
     },
+    "/privacy-policy": {
+      pl: "/polityka-prywatnosci",
+      en: "/privacy-policy",
+    },
   },
 });

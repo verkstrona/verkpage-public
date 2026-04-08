@@ -39,8 +39,8 @@ Base	5%	10%	15%	20%	25%	30%	35%	40%	45%	50%	55%	60%	65%	70%	75%	80%	85%	90%	95%
   --accent-opa: rgba(173, 43, 16, 0.5);
 } */
 :root {
-  --background-color: #fbf4f3;
-  --font-color: #090201;
+  --background-color: #f8f8f8;
+  --font-color: #0b0b0d;
   --font-color2: #150302;
   --input-background: #fff;
   --box-shadow: rgba(0, 0, 0, 0.1) 0.5rem 0.5rem 1rem;
@@ -55,8 +55,8 @@ Base	5%	10%	15%	20%	25%	30%	35%	40%	45%	50%	55%	60%	65%	70%	75%	80%	85%	90%	95%
 [data-theme="dark"] {
   --dark-image: none;
   --white-image: block;
-  --background-color: #090201;
-  --font-color: #fbf4f3;
+  --background-color: #0b0b0d;
+  --font-color: #f8f8f8;
   --font-color2: #f3dfdb;
   --input-background: #000;
   --accent-color: #cd1c18;
@@ -307,6 +307,15 @@ p {
   }
   .hero-section h2 {
     font-size: 2.4rem;
+  }
+  .hero-kv-box-img {
+    max-width: 42rem;
+  }
+}
+@media (max-width: 30em) {
+  .hero-kv-box-img {
+    max-width: 32rem;
+    max-width: 32rem;
   }
 }
 
@@ -760,4 +769,92 @@ footer {
   padding: 3.2rem;
   padding-top: 9.2rem;
   padding-bottom: 3.2rem;
+}
+
+/* ******** CONTACT PAGE ******** */
+
+.contact-section {
+  padding: 3.2rem;
+  padding-top: 9.2rem;
+  padding-bottom: 3.2rem;
+}
+
+.contact-section-gradient1 {
+  background: linear-gradient(
+    to bottom right,
+    var(--background-color),
+    var(--background-color),
+    var(--background-color),
+    var(--background-color),
+    rgba(205, 28, 24, 0.4)
+  );
+}
+
+.contact-section-gradient2 {
+  background: linear-gradient(
+    to top right,
+    var(--background-color),
+    var(--background-color),
+    var(--background-color),
+    var(--background-color),
+    rgba(205, 28, 24, 0.4)
+  );
+}
+
+@media (max-width: 24em) {
+  .contact-section {
+    padding: 1.8rem;
+    padding-top: 9.6rem;
+    padding-bottom: 3.2rem;
+  }
+}
+
+.contact-section span {
+  font-weight: 600;
+  opacity: 80%;
+}
+
+/* ****** PRIVACY POLICY PAGE ******** */
+.privacy-hero-section {
+  min-height: 50vh;
+  padding: 0 3.2rem;
+  padding-top: 8rem;
+  padding-bottom: 3.2rem;
+  padding-bottom: 3.2rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid rgba(128, 131, 136, 0.1);
+}
+
+.privacy-hero-section h1 {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.privacy-hero-section h2 {
+  font-size: 2.4rem;
+}
+.privacy-hero-section p {
+  font-size: 1.4rem;
+}
+
+.privacy-section {
+  padding: 3.2rem;
+  padding-top: 9.2rem;
+  padding-bottom: 3.2rem;
+}
+
+.privacy-section h2 {
+  font-size: 2.4rem;
+}
+
+.privacy-section p {
+  font-size: 1.4rem;
+}
+
+.privacy-section ul {
+  font-size: 1.2rem;
+  list-style-type: disc;
+  padding-left: 3.2rem;
 }
