@@ -24,6 +24,46 @@ import UseTransitionAbout from "@/app/components/TextTransitionsAbout";
 import RevealingSections from "@/app/components/revealingSections";
 import CountUpComponent from "@/app/components/CountUp";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+
+type Props = {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "Metadata",
+  });
+
+  return {
+    title: {
+      default: t("abouttitle"),
+      template: `%s | Verk Group`,
+    },
+    description: t("aboutdescription"),
+    keywords: t("aboutkeywords"),
+    // SEO i i18n
+    alternates: {
+      languages: {
+        pl: "/pl",
+        en: "/en",
+      },
+    },
+
+    // Open Graph (social media)
+    openGraph: {
+      title: t("abouttitle"),
+      description: t("aboutdescription"),
+      locale: locale,
+      type: "website",
+    },
+  };
+}
 
 export default function AboutPage() {
   const t = useTranslations("AboutPage");
@@ -41,7 +81,7 @@ export default function AboutPage() {
           </RevealingSections>
         </div>
         <Image
-          alt="Key Visual"
+          alt={t("kvalt")}
           src={KV}
           fill
           quality={100}
@@ -68,7 +108,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="gridRow-1">
-                <Image alt="map" src={KV2} />
+                <Image alt={t("kv2alt")} src={KV2} />
               </div>
             </div>
           </div>
@@ -80,22 +120,22 @@ export default function AboutPage() {
             <h2 className="opacity-75 pb-12">{t("wherewesaleHeading")}</h2>
             <div className="wherewework-box">
               <div className="grid grid-cols-4 gap-6 max-[960px]:grid-cols-8 max-[960px]:gap-2">
-                <Image alt="map" src={flagcz} />
-                <Image alt="map" src={flagnl} />
-                <Image alt="map" src={flagsk} />
-                <Image alt="map" src={flagsv} />
-                <Image alt="map" src={flagde} />
-                <Image alt="map" src={flagpl} />
-                <Image alt="map" src={flagee} />
-                <Image alt="map" src={flages} />
-                <Image alt="map" src={flagfr} />
-                <Image alt="map" src={flagit} />
-                <Image alt="map" src={flagro} />
-                <Image alt="map" src={flaglt} />
-                <Image alt="map" src={flaglv} />
-                <Image alt="map" src={flagbg} />
-                <Image alt="map" src={flaghu} />
-                <Image alt="map" src={flagct} />
+                <Image alt={t("flagalt")} src={flagcz} />
+                <Image alt={t("flagalt")} src={flagnl} />
+                <Image alt={t("flagalt")} src={flagsk} />
+                <Image alt={t("flagalt")} src={flagsv} />
+                <Image alt={t("flagalt")} src={flagde} />
+                <Image alt={t("flagalt")} src={flagpl} />
+                <Image alt={t("flagalt")} src={flagee} />
+                <Image alt={t("flagalt")} src={flages} />
+                <Image alt={t("flagalt")} src={flagfr} />
+                <Image alt={t("flagalt")} src={flagit} />
+                <Image alt={t("flagalt")} src={flagro} />
+                <Image alt={t("flagalt")} src={flaglt} />
+                <Image alt={t("flagalt")} src={flaglv} />
+                <Image alt={t("flagalt")} src={flagbg} />
+                <Image alt={t("flagalt")} src={flaghu} />
+                <Image alt={t("flagalt")} src={flagct} />
               </div>
               <div>
                 <div className="px-4 pt-12 max-[960px]:pt-0">
@@ -139,7 +179,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="gridRowSmall-1">
-                <Image alt="map" src={KV3} />
+                <Image alt={t("kv3alt")} src={KV3} />
               </div>
             </div>
             <div className="mt-12">

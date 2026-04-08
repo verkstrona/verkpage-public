@@ -13,7 +13,11 @@ export default function Navigation() {
     <nav className="navigation">
       <div>
         <Link href="/" className="font-bold">
-          <Image src={IMGverk} alt="logo" className="max-h-[50px] w-auto" />
+          <Image
+            src={IMGverk}
+            alt="Logo Verk Group"
+            className="max-h-[50px] w-auto"
+          />
           {/* <Image
             src={IMGverkwhite}
             alt="logo"

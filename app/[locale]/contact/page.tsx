@@ -3,6 +3,46 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import KV from "@/public/contactkv.png";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+
+type Props = {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "Metadata",
+  });
+
+  return {
+    title: {
+      default: t("contacttitle"),
+      template: `%s | Verk Group`,
+    },
+    description: t("contactdescription"),
+    keywords: t("contactkeywords"),
+    // SEO i i18n
+    alternates: {
+      languages: {
+        pl: "/pl",
+        en: "/en",
+      },
+    },
+
+    // Open Graph (social media)
+    openGraph: {
+      title: t("contacttitle"),
+      description: t("contactdescription"),
+      locale: locale,
+      type: "website",
+    },
+  };
+}
 
 export default function ContactPage() {
   const t = useTranslations("ContactPage");
@@ -23,7 +63,7 @@ export default function ContactPage() {
           fill
           quality={100}
           objectFit="cover"
-          className="z-[-1] max-md:object-left object-center"
+          className="z-[-1] object-center"
         />
       </section>
       <section className="disclaimer-section">
@@ -44,14 +84,14 @@ export default function ContactPage() {
                   {t("detailmobilePhone")}{" "}
                   <br className="min-[450px]:hidden"></br>
                   <span>
-                    <Link href="tel:+48123456789">+48 123 456 789</Link>
+                    <Link href="tel:+48888055550">+48 888 055 550</Link>
                   </span>
                 </p>
                 <p className="pb-6">
                   {t("detailphoneNumber")}{" "}
                   <br className="min-[450px]:hidden"></br>
                   <span>
-                    <Link href="tel:+48123456789">+48 123 456 789</Link>
+                    <Link href="tel:+48226709010">+48 22 670 90 10</Link>
                   </span>
                 </p>
                 <p className="pb-6">
@@ -79,14 +119,14 @@ export default function ContactPage() {
                   {t("wholemobilePhone")}{" "}
                   <br className="min-[450px]:hidden"></br>
                   <span>
-                    <Link href="tel:+48123456789">+48 123 456 789</Link>
+                    <Link href="tel:+48888055550">+48 888 055 550</Link>
                   </span>
                 </p>
                 <p className="pb-6">
                   {t("wholephoneNumber")}{" "}
                   <br className="min-[450px]:hidden"></br>
                   <span>
-                    <Link href="tel:+48123456789">+48 123 456 789</Link>
+                    <Link href="tel:+48226709010">+48 22 670 90 10</Link>
                   </span>
                 </p>
                 <p className="pb-6">

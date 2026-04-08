@@ -1,4 +1,21 @@
 {
+  "Metadata": {
+    "title": "Verk Group - Handel, e-commerce i logistyka w Europie",
+    "description": "Verk Group rozwija sprzedaż e-commerce i dystrybucję na rynkach europejskich. Ponad 4500 opinii klientów, własne marki i sprawna logistyka.",
+    "keywords": "e-commerce, handel internetowy, logistyka, dystrybucja, sprzedaż online, Verk Group, marki własne",
+    "abouttitle": "O nas",
+    "aboutdescription": "Poznaj Verk Group – firmę rozwijającą sprzedaż e-commerce i dystrybucję w Europie. Ponad 4500 opinii klientów i własne marki.",
+    "aboutkeywords": "verk group, o nas, e-commerce, logistyka, sprzedaż, dystrybucja, europa",
+    "brandstitle": "Nasze marki",
+    "brandsdescription": "Poznaj marki rozwijane przez Verk Group: VERK GROUP, DIVODV, OPEX TOOLS i PRZYJACIELE.",
+    "brandskeywords": "marki własne, verk group, divodv, opex tools, e-commerce marki",
+    "contacttitle": "Kontakt",
+    "contactdescription": "Skontaktuj się z Verk Group – obsługa klienta detalicznego i hurtowego. Telefon, e-mail i dane firmy.",
+    "contactkeywords": "kontakt verk group, dane firmy, telefon, email, hurtownia, sklep",
+    "privacytitle": "Polityka prywatności",
+    "privacydescription": "Informacje dotyczące przetwarzania danych osobowych oraz plików cookies w Verk Group.",
+    "privacykeywords": "polityka prywatności, rodo, dane osobowe, cookies"
+  },
   "Navigation": {
     "home": "Strona główna",
     "about": "O nas",
@@ -16,7 +33,16 @@
     "title": "Mapa jest zablokowana do czasu zaakceptowania cookies."
   },
   "Footer": {
-    "rights": "Wszelkie prawa zastrzeżone."
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "home": "Strona główna",
+    "about": "O nas",
+    "brands": "Nasze Marki",
+    "contact": "Kontakt",
+    "shop": "Sklep",
+    "warehouse": "Hurtownia",
+    "privacy": "Polityka Prywatności",
+    "phone1": "Tel. kom:",
+    "phone2": "Tel. stacjonarny:"
   },
   "HomePage": {
     "title": "Verk Group",
@@ -25,6 +51,8 @@
     "description2": "Od magazynowania po dostawę — zajmujemy się całym procesem.",
     "aboutLink": "O Nas",
     "brandsLink": "Odwiedź Sklep",
+    "kvalt": "Międzynarodowa sprzedaż, logistyka, wielobranżowy asortyment",
+    "kv2alt": "Międzynarodowa firma e-commerce, logistyka, sprzedaż detaliczna i hurtowa",
     "aboutHeading": "O Nas",
     "aboutSubheading": "Budujemy nowoczesny handel oparty na danych, logistyce i silnych markach.",
     "aboutDescription1": "Verk Group rozwija sprzedaż w modelu e-commerce, koncentrując się na jakości obsługi i zaufaniu klientów. Nasz sklep Verk.sklep.pl jest obecny na rynku od 2019 roku i zdobył tysiące pozytywnych opinii, obsługując zarówno klientów detalicznych, jak i partnerów hurtowych.",
@@ -32,6 +60,7 @@
     "aboutDescription3": "Realizujemy zamówienia w wielu kategoriach produktowych, zapewniając sprawną logistykę, terminową dostawę oraz elastyczne warunki współpracy dla klientów hurtowych.",
     "reviewsLink": "Zobacz Opinie",
     "learnMoreLink": "Dowiedz się więcej",
+    "kv3alt": "Mapa zasięgu sprzedaży i logistyki w Europie",
     "pros1": "System Wiarygodnych Opinii",
     "pros2": "Dom 2025 -4 miesjce",
     "pros3": "Słucham Swoich Klientów -Złota Odznaka",
@@ -39,6 +68,12 @@
     "brandsSubheading": "Tworzymy i rozwijamy marki dopasowane do potrzeb nowoczesnego rynku.",
     "brandsDescription1": "W portfolio Verk Group znajdują się marki własne, które rozwijamy w oparciu o analizę rynku i doświadczenie sprzedażowe. Każda z nich odpowiada na konkretne potrzeby klientów i jest dystrybuowana w wielu krajach Europy.",
     "brandsSectionLink": "Poznaj Nasze Marki",
+    "kv4alt": "Urządzenia elektroniczne, akcesoria, produkty codziennego użytku",
+    "kv5alt": "Urządzenia kuchenne, narzędzia, produkty do domu i ogrodu",
+    "kv6alt": "Zabawki, produkty dla dzieci i hobby",
+    "kv7alt": "Artykuły sportowe, outdoor, produkty sezonowe",
+    "kv8alt": "Artykuły dla zwierząt, produkty dla domu i ogrodu",
+    "kv9alt": "Magazyny, logistyka, dystrybucja, sprzedaż międzynarodowa",
     "contactHeading": "Kontakt",
     "contactSubheading": "Masz pytania lub chcesz rozpocząć współpracę? Skontaktuj się z nami.",
     "contactDescription": "Jesteśmy otwarci na współpracę biznesową, rozwój sprzedaży oraz nowe projekty. Skontaktuj się z nami, aby porozmawiać o możliwościach współpracy.",
@@ -49,13 +84,16 @@
     "subheading": "Analiza rynku. Rozwój oferty. Sprzedaż detaliczna. Sprzedaż hurtowa. Logistyka i dystrybucja",
     "description1": "Verk Group to firma rozwijająca sprzedaż w modelu e-commerce i dystrybucji, łącząca handel detaliczny i hurtowy. Od 2019 roku budujemy naszą pozycję na rynku, rozwijając sprzedaż poprzez własne kanały oraz współpracę z platformami marketplace.",
     "description2": "Naszym celem jest tworzenie skalowalnego modelu sprzedaży, który łączy rozwój marek własnych, szeroki asortyment oraz efektywną logistykę. Obsługujemy klientów indywidualnych i biznesowych, dostarczając produkty w wielu kategoriach — od elektroniki, przez dom i ogród, po sport i hobby.",
+    "kvalt": "Analiza rynku, rozwój oferty, sprzedaż detaliczna, sprzedaż hurtowa, logistyka i dystrybucja",
     "howweworkHeading": "Jak Działamy?",
     "howweworkDescription1": "Działamy w oparciu o zintegrowany model sprzedaży, który obejmuje rozwój produktu, sprzedaż oraz logistykę.  Wykorzystujemy doświadczenie rynkowe i analizę danych, aby skutecznie rozwijać ofertę i dopasowywać ją do potrzeb klientów.",
     "howweworkDescription2": "Nasza działalność obejmuje zarówno sprzedaż detaliczną poprzez sklep internetowy, jak i obsługę zamówień hurtowych.  Dzięki temu jesteśmy w stanie skalować biznes i docierać do różnych segmentów rynku.",
     "aboutuscontactLink": "Skontaktuj się z nami",
+    "kv2alt": "Analiza rynku, rozwój oferty, sprzedaż detaliczna, sprzedaż hurtowa, logistyka i dystrybucja, międzynarodowa sprzedaż",
     "wherewesaleHeading": "Gdzie Sprzedajemy?",
     "wherewesaleDescription1": "Realizujemy sprzedaż i dostawy do wielu krajów Europy, w tym m.in. Polski, Niemiec, Francji, Hiszpanii, Włoch, Holandii, Czech, Słowacji oraz krajów bałtyckich.",
     "wherewesaleDescription2": "Rozwijamy naszą obecność międzynarodową, stale poszerzając zasięg działalności i dostosowując ofertę do specyfiki lokalnych rynków.",
+    "flagalt": "Flagi krajów, do których realizujemy sprzedaż i dostawy",
     "wherewesaleshopLink": "Odwiedź Sklep",
     "wherewesalewarehouseLink": "Oferta Hurtowa",
     "trustandscaleHeading": "Zaufanie i Skala",
@@ -64,7 +102,8 @@
     "truststats1": "Opinii klientów",
     "truststats2": "Pozytywnych ocen",
     "truststats3": "Od 2019 na rynku",
-    "truststats4": "Wiele kategorii produktowych"
+    "truststats4": "Wiele kategorii produktowych",
+    "kv3alt": "Zaufanie i skala - statystyki opinii, pozytywnych ocen, lat na rynku, kategorii produktowych"
   },
   "ContactPage": {
     "title": "Kontakt",
@@ -103,7 +142,8 @@
     "privacyHeading": "Polityka Prywatności",
     "privacyDescription1": "Administratorem danych osobowych jest VERK GROUP SIKORSKI SP.K.",
     "privacyDescription2": "Szczegóły dotyczące przetwarzania danych znajdują się w Polityce Prywatności.",
-    "privacyLink": "Polityka Prywatności"
+    "privacyLink": "Polityka Prywatności",
+    "kvalt": "Kontakt, dane firmy, telefon, email, hurtownia, sklep"
   },
   "BrandsPage": {
     "title": "Nasze Marki",
@@ -111,6 +151,7 @@
     "description1": "Nasze marki powstają w oparciu o doświadczenie sprzedażowe, analizę rynku oraz potrzeby klientów w różnych segmentach.",
     "disclaimer1": "Portfolio Verk Group obejmuje marki własne rozwijane w różnych kategoriach produktowych.",
     "disclaimer2": "Każda z nich posiada odrębną tożsamość, jednocześnie wpisując się w spójny model biznesowy oparty na jakości, dostępności i skalowalności.",
+    "kvalt": "Marki własne, rozwój marek, analiza rynku, trendy, e-commerce",
     "brandsListHeading": "Nasze Marki",
     "Verkheading": "Verk Group",
     "Verkdescription1": "Marka główna rozwijana w ramach szerokiego portfolio produktowego. Obejmuje różnorodne kategorie — od elektroniki i akcesoriów, po produkty codziennego użytku.",
@@ -128,7 +169,8 @@
     "shopLink": "Przejdź do sklepu detalicznego",
     "brandsDevelopmentHeading": "Rozwój Marek",
     "brandsDevelopmentDescription1": "Rozwój marek w Verk Group opiera się na analizie danych, doświadczeniu sprzedażowym oraz obserwacji trendów rynkowych.",
-    "brandsDevelopmentDescription2": "Dzięki temu skutecznie wprowadzamy i skalujemy produkty w różnych segmentach rynku."
+    "brandsDevelopmentDescription2": "Dzięki temu skutecznie wprowadzamy i skalujemy produkty w różnych segmentach rynku.",
+    "kv2alt": "Marki własne, rozwój marek, analiza rynku, trendy, e-commerce"
   },
   "PrivacyPolicyPage": {
     "title": "Polityka Prywatności",

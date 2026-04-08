@@ -1,6 +1,46 @@
 import RevealingSections from "@/app/components/revealingSections";
+import { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
+
+type Props = {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "Metadata",
+  });
+
+  return {
+    title: {
+      default: t("privacytitle"),
+      template: `%s | Verk Group`,
+    },
+    description: t("privacydescription"),
+    keywords: t("privacykeywords"),
+    // SEO i i18n
+    alternates: {
+      languages: {
+        pl: "/pl",
+        en: "/en",
+      },
+    },
+
+    // Open Graph (social media)
+    openGraph: {
+      title: t("privacytitle"),
+      description: t("privacydescription"),
+      locale: locale,
+      type: "website",
+    },
+  };
+}
 
 export default function PrivacyPage() {
   const t = useTranslations("PrivacyPolicyPage");

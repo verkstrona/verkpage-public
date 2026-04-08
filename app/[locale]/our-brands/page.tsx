@@ -9,6 +9,46 @@ import KVprzyjaciele from "@/public/LogoPrzyjaciele.png";
 
 import Image from "next/image";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+
+type Props = {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "Metadata",
+  });
+
+  return {
+    title: {
+      default: t("brandstitle"),
+      template: `%s | Verk Group`,
+    },
+    description: t("brandsdescription"),
+    keywords: t("brandskeywords"),
+    // SEO i i18n
+    alternates: {
+      languages: {
+        pl: "/pl",
+        en: "/en",
+      },
+    },
+
+    // Open Graph (social media)
+    openGraph: {
+      title: t("brandstitle"),
+      description: t("brandsdescription"),
+      locale: locale,
+      type: "website",
+    },
+  };
+}
 
 export default function BrandsPage() {
   const t = useTranslations("BrandsPage");
@@ -23,7 +63,7 @@ export default function BrandsPage() {
           </RevealingSections>
         </div>
         <Image
-          alt="Key Visual"
+          alt={t("kvalt")}
           src={KV}
           fill
           quality={100}
@@ -52,7 +92,7 @@ export default function BrandsPage() {
                 </h3>
                 <div className="brands-box">
                   <div>
-                    <Image alt="map" src={KVverk} />
+                    <Image alt="Logo Verk Group" src={KVverk} />
                   </div>
                   <div className="flex flex-col gap-4 brands-textbox">
                     <h3 className="opacity-90 min-[897px]:hidden pb-4">
@@ -71,7 +111,7 @@ export default function BrandsPage() {
                 </h3>
                 <div className="brands-box">
                   <div>
-                    <Image alt="map" src={KVdivo} />
+                    <Image alt="Logo Divo" src={KVdivo} />
                   </div>
                   <div className="flex flex-col gap-4 brands-textbox">
                     <h3 className="opacity-90 min-[897px]:hidden pb-4">
@@ -90,7 +130,7 @@ export default function BrandsPage() {
                 </h3>
                 <div className="brands-box">
                   <div>
-                    <Image alt="map" src={KVopex} />
+                    <Image alt="Logo Opex Tools" src={KVopex} />
                   </div>
                   <div className="flex flex-col gap-4 brands-textbox">
                     <h3 className="opacity-90 min-[897px]:hidden  pb-4">
@@ -109,7 +149,7 @@ export default function BrandsPage() {
                 </h3>
                 <div className="brands-box">
                   <div>
-                    <Image alt="map" src={KVprzyjaciele} />
+                    <Image alt="Logo Przyjaciele" src={KVprzyjaciele} />
                   </div>
                   <div className="flex flex-col gap-4 brands-textbox">
                     <h3 className="opacity-90 min-[897px]:hidden pb-4">

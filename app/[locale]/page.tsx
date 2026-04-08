@@ -46,12 +46,12 @@ export default function HomePage() {
         <div className="h-full w-full p-8 grid items-center">
           <Image
             src={KV}
-            alt="kv"
+            alt={t("kvalt")}
             className="hero-kv-box-img self-center justify-self-center"
           />
         </div>
         <Image
-          alt="Key Visual"
+          alt={t("kv2alt")}
           src={KV5}
           fill
           quality={100}
@@ -91,7 +91,7 @@ export default function HomePage() {
           </RevealingSections>
         </div>
         <Image
-          alt="map"
+          alt={t("kv3alt")}
           src={IMGMap}
           fill
           className="w-full h-auto z-[-1] opacity-40 transform translate-x-24 object-contain object-right max-[930px]:object-cover max-[930px]:object-left max-[930px]:opacity-20 max-sm:object-center max-sm:translate-x-0 max-sm:opacity-10"
@@ -132,32 +132,32 @@ export default function HomePage() {
                 <div className="grid grid-cols-3 gap-4 max-sm:grid-cols-2">
                   <Image
                     src={IMGgrid1}
-                    alt="brand1"
+                    alt={t("kv4alt")}
                     className="w-full h-auto"
                   />
                   <Image
                     src={IMGgrid2}
-                    alt="brand2"
+                    alt={t("kv5alt")}
                     className="w-full h-auto"
                   />
                   <Image
                     src={IMGgrid3}
-                    alt="brand3"
+                    alt={t("kv6alt")}
                     className="w-full h-auto"
                   />
                   <Image
                     src={IMGgrid4}
-                    alt="brand4"
+                    alt={t("kv7alt")}
                     className="w-full h-auto"
                   />
                   <Image
                     src={IMGgrid5}
-                    alt="brand5"
+                    alt={t("kv8alt")}
                     className="w-full h-auto"
                   />
                   <Image
                     src={IMGgrid6}
-                    alt="brand6"
+                    alt={t("kv9alt")}
                     className="w-full h-auto"
                   />
                 </div>

@@ -1,4 +1,21 @@
 {
+  "Metadata": {
+    "title": "Verk Group - E-commerce, trade and logistics in Europe",
+    "description": "Verk Group develops e-commerce and distribution across European markets. 4500+ customer reviews, own brands and efficient logistics.",
+    "keywords": "e-commerce, online trade, logistics, distribution, e-commerce, Verk Group, own brands",
+    "abouttitle": "About us",
+    "aboutdescription": "Learn more about Verk Group – a company developing e-commerce and distribution across Europe with 4500+ customer reviews.",
+    "aboutkeywords": "verk group, about us, ecommerce, logistics, distribution, europe",
+    "brandstitle": "Our brands",
+    "brandsdescription": "Explore brands developed by Verk Group: VERK GROUP, DIVODV, OPEX TOOLS and PRZYJACIELE.",
+    "brandskeywords": "private label, brands, verk group, divodv, opex tools",
+    "contacttitle": "Contact",
+    "contactdescription": "Contact Verk Group – customer service for retail and wholesale. Phone, email and company details.",
+    "contactkeywords": "contact verk group, company details, phone, email, wholesale",
+    "privacytitle": "Privacy Policy",
+    "privacydescription": "Information about personal data processing and cookies used by Verk Group.",
+    "privacykeywords": "privacy policy, gdpr, personal data, cookies"
+  },
   "Navigation": {
     "home": "Home",
     "about": "About Us",
@@ -16,7 +33,16 @@
     "title": "The map is blocked until you accept cookies."
   },
   "Footer": {
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "home": "Home",
+    "about": "About Us",
+    "brands": "Our Brands",
+    "contact": "Contact",
+    "shop": "Shop",
+    "warehouse": "Wholesale",
+    "privacy": "Privacy Policy",
+    "phone1": "Mobile:",
+    "phone2": "Telephone:"
   },
   "HomePage": {
     "title": "Verk Group",
@@ -25,6 +51,8 @@
     "description2": "From warehousing to delivery — we handle the entire process.",
     "aboutLink": "About Us",
     "brandsLink": "Visit Shop",
+    "kvalt": "International sales, logistics, diverse product range",
+    "kv2alt": "International e-commerce company, logistics, retail and wholesale sales",
     "aboutHeading": "About Us",
     "aboutSubheading": "Building modern commerce based on data, logistics, and strong brands.",
     "aboutDescription1": "Verk Group develops sales in the e-commerce model, focusing on quality service and customer trust. Our shop Verk.sklep.pl has been present on the market since 2019 and has received thousands of positive reviews, serving both retail customers and wholesale partners.",
@@ -32,6 +60,7 @@
     "aboutDescription3": "We fulfill orders in multiple product categories, ensuring efficient logistics and timely delivery as well as flexible cooperation conditions for wholesale customers.",
     "reviewsLink": "See Reviews",
     "learnMoreLink": "Learn More",
+    "kv3alt": "Map of sales and logistics coverage in Europe",
     "pros1": "Reliable Reviews System",
     "pros2": "Dom 2025 -4 place",
     "pros3": "I Listen to My Customers -Gold Badge",
@@ -39,6 +68,12 @@
     "brandsSubheading": "We create and develop brands tailored to the needs of the modern market.",
     "brandsDescription1": "The Verk Group portfolio includes private labels that we develop based on market analysis and sales experience. Each of them responds to specific customer needs and is distributed in many European countries.",
     "brandsSectionLink": "Meet Our Brands",
+    "kv4alt": "Electronic devices, accessories, everyday products",
+    "kv5alt": "Kitchen appliances, tools, home and garden products",
+    "kv6alt": "Toys, products for children and hobbies",
+    "kv7alt": "Sports articles, outdoor, seasonal products",
+    "kv8alt": "Pet supplies, home and garden products",
+    "kv9alt": "Warehouses, logistics, distribution, international sales",
     "contactHeading": "Contact",
     "contactSubheading": "Have questions or want to start cooperation? Contact us.",
     "contactDescription": "We are open to business cooperation, sales development, and new projects. Contact us to discuss cooperation opportunities.",
@@ -49,13 +84,16 @@
     "subheading": "Market analysis. Offer development. Retail sales.  Wholesale. Logistics and distribution",
     "description1": "Verk Group is a company developing sales in the e-commerce and distribution model, combining retail and wholesale trade. Since 2019, we have been building our position on the market, developing sales through our own channels and cooperation with marketplace platforms.",
     "description2": "Our goal is to create a scalable sales model that combines the development of private labels, a wide assortment, and efficient logistics. We serve individual and business customers, delivering products in many categories — from electronics, through home and garden, to sports and hobbies.",
+    "kvalt": "Market analysis, offer development, retail sales, wholesale sales, logistics and distribution",
     "howweworkHeading": "How We Work?",
     "howweworkDescription1": "We operate based on an integrated sales model that includes product development, sales, and logistics. We use market experience and data analysis to effectively develop the offer and tailor it to customer needs.",
     "howweworkDescription2": "Our activity includes both retail sales through the online store and handling wholesale orders. This allows us to scale the business and reach different market segments.",
     "aboutuscontactLink": "Contact us",
+    "kv2alt": "Market analysis, offer development, retail sales, wholesale sales, logistics and distribution, international sales",
     "wherewesaleHeading": "Where We Sell?",
     "wherewesaleDescription1": "We carry out sales and deliveries to many European countries  including, among others, Poland, Germany, France, Spain, Italy, the Netherlands, the Czech Republic, Slovakia, and the Baltic countries.",
     "wherewesaleDescription2": "We are developing our international presence, constantly expanding the scope of activity and adapting the offer to the specifics of local markets.",
+    "flagalt": "Flags of countries to which we implement sales and deliveries",
     "wherewesaleshopLink": "Visit Shop",
     "wherewesalewarehouseLink": "Wholesale Offer",
     "trustandscaleHeading": "Trust and Scale",
@@ -64,7 +102,8 @@
     "truststats1": "Reviews",
     "truststats2": "Positive Ratings",
     "truststats3": "Since 2019 on the market",
-    "truststats4": "Multiple Product Categories"
+    "truststats4": "Multiple Product Categories",
+    "kv3alt": "Trust and Scale - statistics of reviews, positive ratings, years on the market, product categories"
   },
   "ContactPage": {
     "title": "Contact",
@@ -103,7 +142,8 @@
     "privacyHeading": "Privacy Policy",
     "privacyDescription1": "The administrator of personal data is VERK GROUP SIKORSKI SP.K.",
     "privacyDescription2": "Details about data processing can be found in the Privacy Policy.",
-    "privacyLink": "Privacy Policy"
+    "privacyLink": "Privacy Policy",
+    "kvalt": "Contact, company details, phone, email, wholesale, shop"
   },
   "BrandsPage": {
     "title": "Our Brands",
@@ -111,6 +151,7 @@
     "description1": "Each of our brands is created based on sales experience, market analysis, and customer needs in various segments.",
     "disclaimer1": "The Verk Group portfolio includes private labels developed in various product categories.",
     "disclaimer2": "Each of them has a separate identity while fitting into a consistent business model based on quality, availability, and scalability.",
+    "kvalt": "Own brands, brand development, market analysis, trends, e-commerce",
     "brandsListHeading": "Our Brands",
     "Verkheading": "Verk Group",
     "Verkdescription1": "The main brand developed within the wide product portfolio. It includes diverse categories — from electronics and accessories to everyday products.",
@@ -128,7 +169,8 @@
     "shopLink": "Visit Shop",
     "brandsDevelopmentHeading": "Brand Development",
     "brandsDevelopmentDescription1": "We develop our brands based on market analysis, sales data, and observation of market trends.",
-    "brandsDevelopmentDescription2": "This allows us to effectively introduce and scale products across various market segments."
+    "brandsDevelopmentDescription2": "This allows us to effectively introduce and scale products across various market segments.",
+    "kv2alt": "Own brands, brand development, market analysis, trends, e-commerce"
   },
   "PrivacyPolicyPage": {
     "title": "Privacy Policy",
