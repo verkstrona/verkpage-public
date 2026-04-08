@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import KV from "@/public/aboutuskv.png";
-import KV2 from "@/public/aboutuskv2.png";
-import KV3 from "@/public/aboutuskv3.png";
+import KV from "@/public/aboutuskv.jpg";
+import KV2 from "@/public/aboutuskv2.jpg";
+import KV3 from "@/public/aboutuskv3.jpg";
 import flagcz from "@/public/flagcz.png";
 import flagde from "@/public/flagde.png";
 import flagfr from "@/public/flagfr.png";

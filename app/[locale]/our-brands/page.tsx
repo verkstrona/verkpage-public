@@ -1,7 +1,7 @@
 import RevealingSections from "@/app/components/revealingSections";
 import { useTranslations } from "next-intl";
-import KV from "@/public/brandskv.png";
-import KV2 from "@/public/brandskv2.png";
+import KV from "@/public/brandskv.jpg";
+import KV2 from "@/public/brandskv2.jpg";
 import KVverk from "@/public/LogoVerk.png";
 import KVdivo from "@/public/LogoDivo.png";
 import KVopex from "@/public/LogoOpex.png";

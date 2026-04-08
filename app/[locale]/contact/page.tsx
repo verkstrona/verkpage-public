@@ -1,7 +1,7 @@
 import RevealingSections from "@/app/components/revealingSections";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import KV from "@/public/contactkv.png";
+import KV from "@/public/contactkv.jpg";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
