@@ -22,7 +22,8 @@
     "brands": "Nasze Marki",
     "contact": "Kontakt",
     "shop": "Sklep",
-    "warehouse": "Hurtownia"
+    "warehouse": "Hurtownia",
+    "warehouseLink": "https://internetowa-hurtownia.pl/"
   },
   "CookieBanner": {
     "message": "Ta strona korzysta z cookies.",
@@ -165,6 +166,12 @@
     "Przyjacieleheading": "Przyjaciele",
     "Przyjaciedescription1": "Marka skierowana do segmentu produktów codziennego użytku i lifestyle.",
     "Przyjaciedescription2": "Tworzona z myślą o szerokim gronie odbiorców, łącząc funkcjonalność z przystępną formą.",
+    "Tobiheading": "Tobi",
+    "Tobidescription1": "Marka oferująca produkty codziennego użytku, skoncentrowana na funkcjonalności i dostępności. ",
+    "Tobidescription2": "Odpowiada na potrzeby szerokiego grona klientów, łącząc praktyczne rozwiązania z przystępną formą.",
+    "Bailongheading": "Bailong",
+    "Bailongdescription1": "Marka ukierunkowana na produkty techniczne i użytkowe, cenione za solidność i funkcjonalność.",
+    "Bailongdescription2": "Dedykowana klientom poszukującym sprawdzonych rozwiązań w codziennym użytkowaniu.",
     "wholesaleLink": "Zobacz ofertę hurtową",
     "shopLink": "Przejdź do sklepu detalicznego",
     "brandsDevelopmentHeading": "Rozwój Marek",

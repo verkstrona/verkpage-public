@@ -22,7 +22,8 @@
     "brands": "Our Brands",
     "contact": "Contact",
     "shop": "Shop",
-    "warehouse": "Wholesale"
+    "warehouse": "Wholesale",
+    "warehouseLink": "https://verk.store/main-eng.html"
   },
   "CookieBanner": {
     "message": "This site uses cookies.",
@@ -165,6 +166,12 @@
     "Przyjacieleheading": "Przyjaciele",
     "Przyjaciedescription1": "A brand aimed at the segment of everyday products and lifestyle.",
     "Przyjaciedescription2": "Created with the idea of a broad audience, combining functionality with an accessible design.",
+    "Tobiheading": "Tobi",
+    "Tobidescription1": "A brand offering everyday products, focused on functionality and availability.",
+    "Tobidescription2": "Meets the needs of a wide range of customers, combining practical solutions with an accessible design.",
+    "Bailongheading": "Bailong",
+    "Bailongdescription1": "A brand focused on technical and utility products, valued for solidity and functionality.",
+    "Bailongdescription2": "Dedicated to customers looking for proven solutions in everyday use.",
     "wholesaleLink": "Wholesale Offer",
     "shopLink": "Visit Shop",
     "brandsDevelopmentHeading": "Brand Development",

@@ -6,11 +6,14 @@ import KVverk from "@/public/LogoVerk.png";
 import KVdivo from "@/public/LogoDivo.png";
 import KVopex from "@/public/LogoOpex.png";
 import KVprzyjaciele from "@/public/LogoPrzyjaciele.png";
+import KVtobi from "@/public/LogoTobi.png";
+import KVbailong from "@/public/LogoBailong.png";
 
 import Image from "next/image";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
+import ButtonLinkHero from "@/app/components/ButtonLinkHero";
 
 type Props = {
   children: React.ReactNode;
@@ -161,16 +164,59 @@ export default function BrandsPage() {
                 </div>
               </div>
             </RevealingSections>
+            <RevealingSections goinUp={true}>
+              <div>
+                <h3 className="opacity-90 pb-8 max-[897px]:hidden ">
+                  {t("Tobiheading")}
+                </h3>
+                <div className="brands-box">
+                  <div>
+                    <Image alt="Logo Tobi" src={KVtobi} />
+                  </div>
+                  <div className="flex flex-col gap-4 brands-textbox">
+                    <h3 className="opacity-90 min-[897px]:hidden pb-4">
+                      {t("Tobiheading")}
+                    </h3>
+                    <p>{t("Tobidescription1")}</p>
+                    <p>{t("Tobidescription2")}</p>
+                  </div>
+                </div>
+              </div>
+            </RevealingSections>
+            <RevealingSections goinUp={true}>
+              <div>
+                <h3 className="opacity-90 pb-8 max-[897px]:hidden ">
+                  {t("Bailongheading")}
+                </h3>
+                <div className="brands-box">
+                  <div>
+                    <Image alt="Logo Bailong" src={KVbailong} />
+                  </div>
+                  <div className="flex flex-col gap-4 brands-textbox">
+                    <h3 className="opacity-90 min-[897px]:hidden pb-4">
+                      {t("Bailongheading")}
+                    </h3>
+                    <p>{t("Bailongdescription1")}</p>
+                    <p>{t("Bailongdescription2")}</p>
+                  </div>
+                </div>
+              </div>
+            </RevealingSections>
           </div>
           <RevealingSections goinUp={false}>
-            <div className="flex gap-16 pt-24 justify-center w-full items-center max-[897px]:flex-col">
-              <Link
+            <div className="flex gap-16 pt-24 justify-center w-full items-center max-[897px]:flex-col min-h-70">
+              {/* <Link
                 className="btn-primary"
                 href="https://verk.sklep.pl"
                 target="_blank"
               >
                 {t("shopLink")}
-              </Link>
+              </Link> */}
+              <ButtonLinkHero
+                btnText={t("shopLink")}
+                btnType="btn-primary"
+                width="w-fit"
+              />
               <Link
                 className="btn-secondary"
                 href="https://internetowa-hurtownia.pl/main-cze.html"

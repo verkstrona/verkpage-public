@@ -5,15 +5,16 @@ import KV from "@/public/kv3New.png";
 import KV5 from "@/public/kv5.jpg";
 import UseTransition from "../components/TextTransitions";
 import IMGMap from "@/public/mapa4.png";
-import IMGgrid1 from "@/public/homeGrid1New.jpg";
-import IMGgrid2 from "@/public/homeGrid2New.jpg";
-import IMGgrid3 from "@/public/homeGrid3New.jpg";
-import IMGgrid4 from "@/public/homeGrid4.jpg";
-import IMGgrid5 from "@/public/homeGrid5.jpg";
-import IMGgrid6 from "@/public/homeGrid6New.jpg";
+import IMGgrid1 from "@/public/LogoBrandsVerk.png";
+import IMGgrid2 from "@/public/LogoBrandsDivo.png";
+import IMGgrid3 from "@/public/LogoBrandsOpex.png";
+import IMGgrid4 from "@/public/LogoBrandsPrzyjaciele.png";
+import IMGgrid5 from "@/public/LogoBrandsTobi.png";
+import IMGgrid6 from "@/public/LogoBrandsBailong.png";
 import RevealingSections from "../components/revealingSections";
 import Partners from "../components/Partners";
 import Map from "../components/GoogleMap";
+import ButtonLinkHero from "../components/ButtonLinkHero";
 
 export default function HomePage() {
   const t = useTranslations("HomePage");
@@ -34,13 +35,18 @@ export default function HomePage() {
             <Link href="/about-us" className="btn1">
               {t("aboutLink")}
             </Link>
-            <Link
+            {/* <Link
               href="https://verk.sklep.pl/"
               target="_blank"
               className="btn2"
             >
               {t("brandsLink")}
-            </Link>
+            </Link> */}
+            <ButtonLinkHero
+              btnText={t("brandsLink")}
+              btnType="btn2"
+              width="w-full"
+            />
           </div>
         </div>
         <div className="h-full w-full p-8 grid items-center">
@@ -94,7 +100,7 @@ export default function HomePage() {
           alt={t("kv3alt")}
           src={IMGMap}
           fill
-          className="w-full h-auto z-[-1] opacity-40 transform translate-x-24 object-contain object-right max-[930px]:object-cover max-[930px]:object-left max-[930px]:opacity-20 max-sm:object-center max-sm:translate-x-0 max-sm:opacity-10"
+          className="w-full h-auto z-[-1] opacity-40 transform translate-x-24 object-contain object-right max-[930px]:object-cover max-[930px]:object-left max-[930px]:opacity-20 max-sm:object-center max-sm:translate-x-0 max-sm:opacity-10 about-section-map"
         />
       </section>
       <section className="p-4 bg-[#CD1C18] text-[#fbf4f3] red-section">
@@ -129,36 +135,42 @@ export default function HomePage() {
             </RevealingSections>
             <div>
               <RevealingSections goinUp={false}>
-                <div className="grid grid-cols-3 gap-4 max-sm:grid-cols-2">
+                <div className="grid grid-cols-3 gap-8 max-sm:grid-cols-2 max-sm:gap-4">
                   <Image
                     src={IMGgrid1}
-                    alt={t("kv4alt")}
-                    className="w-full h-auto"
+                    // alt={t("kv4alt")}
+                    alt="Logo Verk"
+                    className="w-full h-auto brandsHomeImg"
                   />
                   <Image
                     src={IMGgrid2}
-                    alt={t("kv5alt")}
-                    className="w-full h-auto"
+                    // alt={t("kv5alt")}
+                    alt="Logo Divo"
+                    className="w-full h-auto brandsHomeImg"
                   />
                   <Image
                     src={IMGgrid3}
-                    alt={t("kv6alt")}
-                    className="w-full h-auto"
+                    // alt={t("kv6alt")}
+                    alt="Logo Opex"
+                    className="w-full h-auto brandsHomeImg"
                   />
                   <Image
                     src={IMGgrid4}
-                    alt={t("kv7alt")}
-                    className="w-full h-auto"
+                    // alt={t("kv7alt")}
+                    alt="Logo Przyjaciele"
+                    className="w-full h-auto brandsHomeImg"
                   />
                   <Image
                     src={IMGgrid5}
-                    alt={t("kv8alt")}
-                    className="w-full h-auto"
+                    // alt={t("kv8alt")}
+                    alt="Logo Tobi"
+                    className="w-full h-auto brandsHomeImg"
                   />
                   <Image
                     src={IMGgrid6}
-                    alt={t("kv9alt")}
-                    className="w-full h-auto"
+                    // alt={t("kv9alt")}
+                    alt="Logo Bailong"
+                    className="w-full h-auto brandsHomeImg"
                   />
                 </div>
               </RevealingSections>

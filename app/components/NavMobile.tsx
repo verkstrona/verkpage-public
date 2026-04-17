@@ -2,6 +2,7 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
+import ButtonLinkNavMobile from "./ButtonLinkNavMobile";
 
 function MobileNav() {
   const t = useTranslations("Navigation");
@@ -22,26 +23,27 @@ function MobileNav() {
         </svg>
       </button>
       {isOpen && (
-        <nav className="navmb" onClick={() => setIsOpen(!isOpen)}>
+        <nav className="navmb">
           <ul className="flex flex-col justify-end  gap-12">
-            <li>
+            <li onClick={() => setIsOpen(!isOpen)}>
               <Link href="/"> {t("home")} </Link>
             </li>
-            <li>
+            <li onClick={() => setIsOpen(!isOpen)}>
               <Link href="/about-us"> {t("about")} </Link>
             </li>
             <li>
               <Link href="/our-brands"> {t("brands")} </Link>
             </li>
-            <li>
+            <li onClick={() => setIsOpen(!isOpen)}>
               <Link href="/contact"> {t("contact")} </Link>
             </li>
-            <li>
-              <Link href="https://verk.sklep.pl/" target="_blank">
+            <li className="relative">
+              {/* <Link href="https://verk.sklep.pl/" target="_blank">
                 {t("shop")}
-              </Link>
+              </Link> */}
+              <ButtonLinkNavMobile btnText={t("shop")} width="w-fit" />
             </li>
-            <li>
+            <li onClick={() => setIsOpen(!isOpen)}>
               <Link href="https://internetowa-hurtownia.pl/" target="_blank">
                 {t("warehouse")}
               </Link>

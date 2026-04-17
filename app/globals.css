@@ -246,6 +246,22 @@ p {
   color: var(--background-color);
 }
 
+.navItemRev {
+  animation: revfromright 0.5s ease-out;
+  animation: revfromright 0.5s ease-out;
+}
+
+@keyframes revfromright {
+  0% {
+    transform: translateX(4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 100;
+  }
+}
+
 @keyframes navrev {
   0% {
     opacity: 0;
@@ -342,7 +358,7 @@ p {
   justify-content: center;
 }
 
-.hero-btn-box .btn1 {
+.btn1 {
   color: var(--background-color);
   padding: 1rem 2.4rem;
   font-size: 2.4rem;
@@ -351,12 +367,11 @@ p {
   transition: all 0.5s;
 }
 
-.hero-btn-box .btn2 {
+.btn2 {
   background-color: var(--font-color);
   padding: 1.2rem 2.4rem;
   transition: all 0.5s;
   font-size: 2.4rem;
-  font-weight: 500;
   font-weight: 500;
 }
 
@@ -529,8 +544,12 @@ p {
   }
 }
 
-.about-section img {
+.about-section-map {
   box-shadow: none;
+}
+
+.brandsHomeImg {
+  box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary,

@@ -26,6 +26,7 @@ import CountUpComponent from "@/app/components/CountUp";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
+import ButtonLinkHero from "@/app/components/ButtonLinkHero";
 
 type Props = {
   children: React.ReactNode;
@@ -144,14 +145,19 @@ export default function AboutPage() {
                     <p className="pb-4">{t("wherewesaleDescription2")}</p>
                   </div>
                 </div>
-                <div className="flex gap-16 py-8 justify-center w-full items-center max-[525px]:flex-col">
-                  <Link
+                <div className="flex gap-16 py-8 justify-center w-full items-center max-[525px]:flex-col relative min-h-70">
+                  {/* <Link
                     href="https://verk.sklep.pl/"
                     target="_blank"
                     className="btn-primary"
                   >
                     {t("wherewesaleshopLink")}
-                  </Link>
+                  </Link> */}
+                  <ButtonLinkHero
+                    btnText={t("wherewesaleshopLink")}
+                    btnType="btn-primary"
+                    width="w-fit"
+                  />
                   <Link
                     href="https://internetowa-hurtownia.pl/"
                     target="_blank"

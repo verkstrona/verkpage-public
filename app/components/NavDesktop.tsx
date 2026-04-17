@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 import { usePathname } from "next/navigation";
+import ButtonLinkNav from "./ButtonLinkNav";
 
 export default function NavDesktop() {
   const pathname = usePathname();
@@ -41,13 +42,16 @@ export default function NavDesktop() {
           {t("contact")}
         </Link>
       </li>
-      <li>
+      <li className="relative">
+        <ButtonLinkNav btnText={t("shop")} width="w-fit" />
+      </li>
+      {/* <li>
         <Link href="https://verk.sklep.pl/" target="_blank">
           {t("shop")}
         </Link>
-      </li>
+      </li> */}
       <li>
-        <Link href="https://internetowa-hurtownia.pl/" target="_blank">
+        <Link href={t("warehouseLink")} target="_blank">
           {t("warehouse")}
         </Link>
       </li>
