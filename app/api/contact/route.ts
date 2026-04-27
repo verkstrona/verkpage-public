@@ -27,11 +27,11 @@ export async function POST(req: Request) {
     const formData = await req.formData();
 
     const rawData = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      message: formData.get("message"),
-      topic: formData.get("topic"),
-      company: formData.get("company"),
+      name: String(formData.get("name") || ""),
+      email: String(formData.get("email") || ""),
+      message: String(formData.get("message") || ""),
+      topic: String(formData.get("topic") || ""),
+      company: String(formData.get("company") || ""),
     };
 
     const parsed = schema.safeParse(rawData);
