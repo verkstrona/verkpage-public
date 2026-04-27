@@ -158,7 +158,7 @@
     "formSending": "Sending...",
     "formSend": "Send",
     "formStatusOk": "Message sent ✅",
-    "formSentError": "Sending error ❌ Check all the fields and make sure the attachment (if any) is less than 5 MB",
+    "formStatusError": "Sending error ❌ Check all the fields and make sure the attachment (if any) is less than 5 MB",
     "formFileButton": "Add attachment",
     "formFilePlaceholder": "File not choosen",
     "formFileHint": "Max 5MB (PDF, JPG, PNG)"
