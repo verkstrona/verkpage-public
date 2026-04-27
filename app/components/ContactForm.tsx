@@ -102,6 +102,22 @@ export default function ContactForm() {
       {/* 🛑 honeypot */}
       <input type="text" name="company" style={{ display: "none" }} />
 
+      <div className="flex items-start gap-2 text-sm py-2">
+        <input
+          type="checkbox"
+          id="consent"
+          required
+          className=" accent-green-600"
+        />
+        <label htmlFor="consent" className="leading-tight">
+          {t("formCheck1")}{" "}
+          <a href="/polityka-prywatnosci" className="underline" target="_blank">
+            {t("formCheck2")}
+          </a>
+          .
+        </label>
+      </div>
+
       <button disabled={loading} className="btn-secondary cursor-pointer">
         {loading ? t("formSending") : t("formSend")}
       </button>

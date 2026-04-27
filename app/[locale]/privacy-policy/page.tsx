@@ -75,6 +75,8 @@ export default function PrivacyPage() {
               <li>{t("rangeList2")}</li>
               <li>{t("rangeList3")}</li>
             </ul>
+            <p className="pt-2">{t("rangeDescription3")}</p>
+            <p className="pt-2">{t("rangeDescription4")}</p>
           </div>
           <div className="pb-12">
             <h2 className="pb-4">{t("purposeHeading")}</h2>

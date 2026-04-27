@@ -161,7 +161,9 @@
     "formStatusError": "Błąd wysyłki ❌ Sprawdź wszystkie pola oraz czy załącznik (jeśli jest) waży mniej niż 5 MB",
     "formFileButton": "Dodaj załącznik",
     "formFilePlaceholder": "Nie wybrano pliku",
-    "formFileHint": "Max 5MB (PDF, JPG, PNG)"
+    "formFileHint": "Max 5MB (PDF, JPG, PNG)",
+    "formCheck1": "Wyrażam zgodę na przetwarzanie danych osobowych w celu kontaktu zgodnie z",
+    "formCheck2": "Polityką prywatności"
   },
   "BrandsPage": {
     "title": "Nasze Marki",
@@ -205,11 +207,13 @@
     "generalDescription1": "Niniejsza polityka prywatności określa zasady przetwarzania danych osobowych oraz wykorzystywania plików cookies na stronie internetowej Verk Group.",
     "generalDescription2": "Administratorem danych osobowych jest: VERK GROUP SIKORSKI SP.K. Wygody 16 05-090 Podolszyn Nowy, Polska NIP: 5342500808",
     "rangeHeading": "2. Zakres zbieranych danych",
-    "rangeDescription1": "Strona ma charakter informacyjny (wizytówkowy) i nie zbiera danych osobowych poprzez formularze.",
+    "rangeDescription1": "Strona ma charakter informacyjny (wizytówkowy) i dane osobowe mogą być również przetwarzane w przypadku skorzystania z formularza kontaktowego dostępnego na stronie. Zakres danych obejmuje dane podane dobrowolnie przez użytkownika, takie jak imię, adres e-mail oraz treść wiadomości.",
     "rangeDescription2": "Dane mogą być przetwarzane w następujących przypadkach:",
     "rangeList1": "kontakt telefoniczny",
     "rangeList2": "kontakt mailowy",
-    "rangeList3": "korzystanie ze strony (dane techniczne, np. adres IP)",
+    "rangeList3": "korzystanie ze strony (dane techniczne, np. adres IP) lub formularza kontaktowego",
+    "rangeDescription3": "Podstawą prawną przetwarzania danych jest zgoda użytkownika wyrażona poprzez wysłanie formularza kontaktowego (art. 6 ust. 1 lit. a RODO).",
+    "rangeDescription4": "Dane będą przechowywane przez czas niezbędny do udzielenia odpowiedzi oraz prowadzenia dalszej korespondencji, a następnie usuwane.",
     "purposeHeading": "3. Cele przetwarzania danych",
     "purposeDescription1": "Dane przetwarzane są w celu:",
     "purposeList1": "udzielenia odpowiedzi na zapytania",

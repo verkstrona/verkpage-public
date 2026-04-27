@@ -161,7 +161,9 @@
     "formStatusError": "Sending error ❌ Check all the fields and make sure the attachment (if any) is less than 5 MB",
     "formFileButton": "Add attachment",
     "formFilePlaceholder": "File not choosen",
-    "formFileHint": "Max 5MB (PDF, JPG, PNG)"
+    "formFileHint": "Max 5MB (PDF, JPG, PNG)",
+    "formCheck1": "I consent to the processing of my personal data for the purpose of contacting me, in accordance with the",
+    "formCheck2": "Privacy Policy"
   },
   "BrandsPage": {
     "title": "Our Brands",
@@ -205,11 +207,13 @@
     "generalDescription1": "This Privacy Policy explains how personal data is processed and how cookies are used on the Verk Group website.",
     "generalDescription2": "The data controller is: VERK GROUP SIKORSKI SP.K. Wygody 16 05-090 Podolszyn Nowy, Poland NIP: 5342500808",
     "rangeHeading": "2. Scope of Data Processing",
-    "rangeDescription1": "This website is an informational website and does not collect personal data via forms.",
+    "rangeDescription1": "This website is for informational purposes (as a business card), and personal data may also be processed when you use the contact form available on the site. The scope of data includes information voluntarily provided by the user, such as name, email address, and the content of the message.",
     "rangeDescription2": "Data may be processed in the following cases:",
     "rangeList1": "phone contact",
     "rangeList2": "email contact",
-    "rangeList3": "website usage (technical data such as IP address)",
+    "rangeList3": "website (technical data such as IP address) or contact form usage ",
+    "rangeDescription3": "The legal basis for data processing is the user’s consent, which is given by submitting the contact form (Article 6(1)(a) of the GDPR).",
+    "rangeDescription4": "The data will be retained for as long as necessary to respond to your inquiry and conduct further correspondence, and will then be deleted.",
     "purposeHeading": "3. Purpose of Data Processing",
     "purposeDescription1": "Data is processed for:",
     "purposeList1": "responding to inquiries",
