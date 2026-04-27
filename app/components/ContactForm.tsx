@@ -69,6 +69,7 @@ export default function ContactForm() {
       <textarea
         name="message"
         placeholder={t("formMessage")}
+        minLength={11}
         required
         className="bg-white"
       />
