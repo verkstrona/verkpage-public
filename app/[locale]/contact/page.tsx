@@ -5,6 +5,7 @@ import KV from "@/public/contactkv.jpg";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
+import ContactForm from "@/app/components/ContactForm";
 
 type Props = {
   children: React.ReactNode;
@@ -191,6 +192,14 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
+          </RevealingSections>
+        </div>
+      </section>
+      <section className="contact-section my-0 overflow-hidden">
+        <div className="container">
+          <RevealingSections goinUp={true}>
+            <h2 className="opacity-75 pb-8">{t("formTitle")}</h2>
+            <ContactForm />
           </RevealingSections>
         </div>
       </section>

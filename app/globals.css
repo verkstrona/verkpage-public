@@ -850,6 +850,38 @@ footer {
   opacity: 80%;
 }
 
+.contact-form {
+  background-color: var(--accent-color);
+  padding: 3.2rem;
+  padding: 3.2rem;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form option {
+  font-size: 1.6rem;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+.contact-form select {
+  font-size: 1.6rem;
+  color: var(--font-color);
+}
+.contact-form textarea {
+  min-height: 20rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.3rem;
+  padding: 0.3rem;
+}
+
+.contact-hint {
+  font-size: 1.2rem;
+  font-size: 1.2rem;
+}
+
 /* ****** PRIVACY POLICY PAGE ******** */
 .privacy-hero-section {
   min-height: 50vh;
