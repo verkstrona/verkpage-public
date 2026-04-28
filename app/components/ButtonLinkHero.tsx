@@ -36,7 +36,7 @@ export default function ButtonLinkHero({
             target="_blank"
             className="text-4xl btn1 text-center"
           >
-            {btnText} Verk
+            {btnText} verk.sklep.pl
           </Link>
           <Link
             href="https://divogarden.eu/"
@@ -44,7 +44,7 @@ export default function ButtonLinkHero({
             target="_blank"
             className="text-4xl btn1 text-center"
           >
-            {btnText} Divo
+            {btnText} divogarden.eu
           </Link>
           <p className="absolute top-0 right-0 py-2 px-3 cursor-pointer">X</p>
         </div>

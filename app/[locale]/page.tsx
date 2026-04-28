@@ -39,14 +39,17 @@ export default function HomePage() {
               href="https://verk.sklep.pl/"
               target="_blank"
               className="btn2"
-            >
+              >
               {t("brandsLink")}
-            </Link> */}
+              </Link> */}
             <ButtonLinkHero
               btnText={t("brandsLink")}
-              btnType="btn2"
+              btnType="btn3"
               width="w-full"
             />
+            <Link href={t("warehouseLinkURL")} target="_blank" className="btn2">
+              {t("warehouseLink")}
+            </Link>
           </div>
         </div>
         <div className="h-full w-full p-8 grid items-center">

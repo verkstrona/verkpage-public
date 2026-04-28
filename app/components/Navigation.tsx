@@ -30,13 +30,13 @@ export default function Navigation() {
           /> */}
         </Link>
       </div>
-      <div className="max-[850px]:hidden max-[980px]:text-3xl">
+      <div className="max-[920px]:hidden max-[980px]:text-3xl">
         <NavDesktop />
       </div>
       <div className="flex items-center justify-items-center gap-8">
         <ThemeToggle />
         <LocaleSwitcher />
-        <div className="min-[850px]:hidden">
+        <div className="min-[920px]:hidden">
           <MobileNav />
         </div>
       </div>

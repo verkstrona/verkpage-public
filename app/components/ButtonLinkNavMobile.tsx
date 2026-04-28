@@ -21,7 +21,7 @@ export default function ButtonLinkNavMobile({
       </button>
       {isClicked && (
         <div
-          className={`absolute z-10 -top-full right-60 min-h-40 ${width} flex flex-col items-center justify-center gap-8 bg-[#CD1C18]/90 px-6 py-4 max-sm:w-full navItemRev`}
+          className={`absolute z-10 -top-full right-70 min-h-40 ${width} flex flex-col items-center justify-center gap-8 bg-[#CD1C18]/90 px-6 py-4 max-sm:w-full navItemRev`}
           onClick={handleClick}
         >
           <Link
@@ -30,7 +30,7 @@ export default function ButtonLinkNavMobile({
             target="_blank"
             className="text-3xl text-center  hover:opacity-60  transition-opacity duration-300"
           >
-            Verk
+            verk.sklep.pl
           </Link>
           <Link
             href="https://divogarden.eu/"
@@ -38,7 +38,7 @@ export default function ButtonLinkNavMobile({
             target="_blank"
             className="text-3xl text-center  hover:opacity-60  transition-opacity duration-300"
           >
-            Divo
+            divogarden.eu
           </Link>
         </div>
       )}

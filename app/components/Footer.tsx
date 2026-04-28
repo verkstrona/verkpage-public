@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="border-b-2 border-[#CD1C18] ">
       <div className="container text-center grid items-center content-center justify-items-center gap-8">
-        <div className="flex items-start justify-items-center text-left gap-8 flex-wrap max-[375px]:gap-6">
+        <div className="grid grid-cols-4 items-start justify-items-center text-left gap-10 max-[585px]:grid-cols-2 max-[585px]:justify-items-start">
           <Image
             src={IMGverk}
             alt="Logo Verk Group"
@@ -51,7 +51,12 @@ export default function Footer() {
           <ul>
             <li>
               <Link href="https://verk.sklep.pl/" target="_blank">
-                {t("shop")}
+                verk.sklep.pl
+              </Link>
+            </li>
+            <li>
+              <Link href="https://divogarden.eu/" target="_blank">
+                divogarden.eu
               </Link>
             </li>
             <li>
@@ -61,7 +66,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <p className="p-footer">
+        <p className="p-footer py-2">
           &copy; {new Date().getFullYear()} Verk Group. {t("rights")}
         </p>
       </div>

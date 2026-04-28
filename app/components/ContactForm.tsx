@@ -102,12 +102,12 @@ export default function ContactForm() {
       {/* 🛑 honeypot */}
       <input type="text" name="company" style={{ display: "none" }} />
 
-      <div className="flex items-start gap-2 text-sm py-2">
+      <div className="flex items-start gap-2 py-2 contact-checkbox-text">
         <input
           type="checkbox"
           id="consent"
           required
-          className=" accent-green-600"
+          className="accent-green-600 contact-checkbox"
         />
         <label htmlFor="consent" className="leading-tight">
           {t("formCheck1")}{" "}

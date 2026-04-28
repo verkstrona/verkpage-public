@@ -21,7 +21,7 @@
     "about": "About Us",
     "brands": "Our Brands",
     "contact": "Contact",
-    "shop": "Shop",
+    "shop": "Retail shops",
     "warehouse": "Wholesale",
     "warehouseLink": "https://verk.store/main-eng.html"
   },
@@ -52,6 +52,8 @@
     "description2": "From warehousing to delivery — we handle the entire process.",
     "aboutLink": "About Us",
     "brandsLink": "Visit Shop",
+    "warehouseLink": "Wholesale",
+    "warehouseLinkURL": "https://verk.store/main-eng.html",
     "kvalt": "International sales, logistics, diverse product range",
     "kv2alt": "International e-commerce company, logistics, retail and wholesale sales",
     "aboutHeading": "About Us",

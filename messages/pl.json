@@ -21,7 +21,7 @@
     "about": "O nas",
     "brands": "Nasze Marki",
     "contact": "Kontakt",
-    "shop": "Sklep",
+    "shop": "Sklepy detaliczne",
     "warehouse": "Hurtownia",
     "warehouseLink": "https://internetowa-hurtownia.pl/"
   },
@@ -52,6 +52,8 @@
     "description2": "Od magazynowania po dostawę — zajmujemy się całym procesem.",
     "aboutLink": "O Nas",
     "brandsLink": "Odwiedź Sklep",
+    "warehouseLink": "Hurtownia",
+    "warehouseLinkURL": "https://internetowa-hurtownia.pl/",
     "kvalt": "Międzynarodowa sprzedaż, logistyka, wielobranżowy asortyment",
     "kv2alt": "Międzynarodowa firma e-commerce, logistyka, sprzedaż detaliczna i hurtowa",
     "aboutHeading": "O Nas",

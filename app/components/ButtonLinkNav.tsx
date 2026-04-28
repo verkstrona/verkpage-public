@@ -30,7 +30,7 @@ export default function ButtonLinkNav({
             target="_blank"
             className="text-3xl text-center  hover:opacity-60  transition-opacity duration-300"
           >
-            Verk
+            verk.sklep.pl
           </Link>
           <Link
             href="https://divogarden.eu/"
@@ -38,7 +38,7 @@ export default function ButtonLinkNav({
             target="_blank"
             className="text-3xl text-center  hover:opacity-60  transition-opacity duration-300"
           >
-            Divo
+            divogarden.eu
           </Link>
         </div>
       )}
