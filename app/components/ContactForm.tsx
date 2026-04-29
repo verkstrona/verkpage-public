@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { set } from "zod";
 
 export default function ContactForm() {
   const t = useTranslations("ContactPage");
@@ -35,29 +36,42 @@ export default function ContactForm() {
 
     if (res.ok) {
       setStatus(t("formStatusOk"));
+      setTimeout(() => {
+        setStatus("");
+      }, 3000);
       form.reset();
     } else {
       setStatus(t("formStatusError"));
+      setTimeout(() => {
+        setStatus("");
+      }, 4000);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4 contact-form">
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col gap-4 contact-form relative large-radius"
+    >
       <input
         name="name"
         placeholder={t("formName")}
         required
-        className="bg-white"
+        className="bg-white huge-radius"
       />
       <input
         name="email"
         type="email"
         placeholder={t("formMail")}
         required
-        className="bg-white"
+        className="bg-white huge-radius"
       />
 
-      <select name="topic" required className="py-2 cursor-pointer">
+      <select
+        name="topic"
+        required
+        className="py-2 cursor-pointer huge-radius-top"
+      >
         <option value="">{t("formTopicTitle")}</option>
         <option value="detaliczne">{t("formTopic1")}</option>
         <option value="hurtowe">{t("formTopic2")}</option>
@@ -69,9 +83,9 @@ export default function ContactForm() {
       <textarea
         name="message"
         placeholder={t("formMessage")}
-        minLength={11}
+        minLength={10}
         required
-        className="bg-white"
+        className="bg-white huge-radius"
       />
       <div className="p-4">
         {/* 🔴 ukryty input */}
@@ -89,14 +103,14 @@ export default function ContactForm() {
         {/* 🟢 custom button */}
         <label
           htmlFor="file"
-          className="cursor-pointer bg-gray-400 px-4 py-2 rounded"
+          className="cursor-pointer bg-[#cd1b18a6] px-4 py-2 large-radius"
         >
           {t("formFileButton")}
         </label>
 
         {/* 📎 nazwa pliku */}
         <p className=" mt-1">{fileName || t("formFilePlaceholder")}</p>
-        <p className="contact-hint text-gray-300">{t("formFileHint")}</p>
+        <p className="contact-hint opacity-70">{t("formFileHint")}</p>
       </div>
 
       {/* 🛑 honeypot */}
@@ -118,11 +132,25 @@ export default function ContactForm() {
         </label>
       </div>
 
-      <button disabled={loading} className="btn-secondary cursor-pointer">
-        {loading ? t("formSending") : t("formSend")}
-      </button>
+      {/* <button disabled={loading} className="btn-form cursor-pointer">
+        {loading ? t("formSending") : `${t("formSend")} `}&rarr;
+      </button> */}
 
-      {status && <p>{status}</p>}
+      {loading ? (
+        <button disabled={loading} className="btn-form cursor-pointer">
+          {t("formSending")}
+        </button>
+      ) : (
+        <button disabled={loading} className="btn-form cursor-pointer">
+          {t("formSend")} &rarr;
+        </button>
+      )}
+
+      {status && (
+        <div className="absolute grid items-center justify-center w-full h-full top-0 left-0 contact-status">
+          <p>{status}</p>
+        </div>
+      )}
     </form>
   );
 }

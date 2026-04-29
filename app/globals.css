@@ -40,6 +40,8 @@ Base	5%	10%	15%	20%	25%	30%	35%	40%	45%	50%	55%	60%	65%	70%	75%	80%	85%	90%	95%
 } */
 :root {
   --background-color: #f8f8f8;
+  --background-color-opa: rgba(248, 248, 248, 0.75);
+  --form-background: #eee;
   --font-color: #0b0b0d;
   --font-color2: #150302;
   --input-background: #fff;
@@ -56,6 +58,8 @@ Base	5%	10%	15%	20%	25%	30%	35%	40%	45%	50%	55%	60%	65%	70%	75%	80%	85%	90%	95%
   --dark-image: none;
   --white-image: block;
   --background-color: #0b0b0d;
+  --background-color-opa: rgba(11, 11, 13, 0.75);
+  --form-background: #333;
   --font-color: #f8f8f8;
   --font-color2: #f3dfdb;
   --input-background: #000;
@@ -168,6 +172,26 @@ h3 {
 
 p {
   font-size: 1.8rem;
+}
+
+.background-col {
+  background-color: var(--background-color);
+}
+
+.large-radius {
+  border-radius: 1rem;
+}
+
+.huge-radius {
+  border-radius: 2rem;
+}
+
+.huge-radius-top {
+  border-radius: 2rem;
+}
+
+.small-radius {
+  border-radius: 0.5rem;
 }
 
 .revealing {
@@ -580,12 +604,16 @@ p {
 }
 
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-form {
   padding: 1.2rem 2.4rem;
   transition: all 0.5s;
   font-size: 2.4rem;
   font-weight: 500;
-  font-weight: 500;
+}
+
+.btn-form {
+  border-radius: 2rem;
 }
 
 @media (max-width: 27em) {
@@ -610,13 +638,15 @@ p {
   border: 0.2rem solid var(--accent-color);
 }
 
-.btn-secondary {
-  background-color: var(--font-color);
+.btn-secondary,
+.btn-form {
+  background-color: var(--accent-color);
   color: var(--background-color);
 }
 
 .btn-primary:hover,
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-form:hover {
   opacity: 80%;
   filter: drop-shadow(0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2));
 }
@@ -629,6 +659,10 @@ p {
 @media (max-width: 40em) {
   .red-section .red-p {
     font-size: 0.7rem;
+  }
+  .btn-form {
+    font-size: 1.8rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -647,9 +681,8 @@ footer li:hover {
   opacity: 80%;
 }
 
-@media (max-width: 37em) {
+@media (max-width: 48em) {
   footer li {
-    font-size: 1.4rem;
     font-size: 1.4rem;
   }
 }
@@ -858,6 +891,10 @@ footer li:hover {
   padding-top: 9.2rem;
   padding-bottom: 3.2rem;
 }
+.form-section {
+  background-color: var(--form-background);
+  background-color: var(--form-background);
+}
 
 .contact-section-gradient1 {
   background: linear-gradient(
@@ -895,8 +932,7 @@ footer li:hover {
 }
 
 .contact-form {
-  background-color: var(--accent-color);
-  padding: 3.2rem;
+  /* background-color: var(--accent-color); */
   padding: 3.2rem;
 }
 
@@ -914,9 +950,9 @@ footer li:hover {
 }
 
 .contact-form input,
-.contact-form textarea {
-  padding: 0.3rem;
-  padding: 0.3rem;
+.contact-form textarea,
+.contact-form select {
+  padding: 0.8rem 1.6rem;
 }
 
 .contact-hint {
@@ -927,6 +963,11 @@ footer li:hover {
 }
 .contact-checkbox-text {
   font-size: 1.6rem;
+}
+
+.contact-status {
+  color: var(--font-color);
+  background-color: var(--background-color-opa);
 }
 
 @media (max-width: 35em) {

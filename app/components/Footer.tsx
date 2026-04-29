@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="border-b-2 border-[#CD1C18] ">
       <div className="container text-center grid items-center content-center justify-items-center gap-8">
-        <div className="grid grid-cols-4 items-start justify-items-center text-left gap-10 max-[585px]:grid-cols-2 max-[585px]:justify-items-start">
+        <div className="grid grid-cols-4 items-start justify-items-center text-left gap-10 max-[660px]:grid-cols-2 max-[660px]:justify-items-start">
           <Image
             src={IMGverk}
             alt="Logo Verk Group"

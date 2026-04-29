@@ -195,7 +195,7 @@ export default function ContactPage() {
           </RevealingSections>
         </div>
       </section>
-      <section className="contact-section my-0 overflow-hidden">
+      <section className="contact-section my-0 overflow-hidden form-section">
         <div className="container">
           <RevealingSections goinUp={true}>
             <h2 className="opacity-75 pb-8">{t("formTitle")}</h2>

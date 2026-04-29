@@ -10,16 +10,16 @@ const schema = z.object({
 });
 
 const emailMap: Record<string, string> = {
-  detaliczne: "robgra97@onet.pl",
-  hurtowe: "robert.grabowski97@gmail.com",
-  reklamacja: "robert.grabowskisu@gmail.com",
-  zwrot: "robert.grabowski97@gmail.com",
-  inne: "robert.grabowski97@gmail.com",
-  // detaliczne: "zamowienia@verk.sklep.pl",
-  // hurtowe: "zamowienia@internetowa-hurtownia.pl",
-  // reklamacja: "reklamacje@verkgroup.pl",
-  // zwrot: "zwroty@verkgroup.pl",
-  // inne: "zamowienia@verk.sklep.pl",
+  // detaliczne: "robgra97@onet.pl",
+  // hurtowe: "robert.grabowski97@gmail.com",
+  // reklamacja: "robert.grabowskisu@gmail.com",
+  // zwrot: "robert.grabowski97@gmail.com",
+  // inne: "robert.grabowski97@gmail.com",
+  detaliczne: "zamowienia@verk.sklep.pl",
+  hurtowe: "zamowienia@internetowa-hurtownia.pl",
+  reklamacja: "reklamacje@verkgroup.pl",
+  zwrot: "zwroty@verkgroup.pl",
+  inne: "zamowienia@verk.sklep.pl",
 };
 
 export async function POST(req: Request) {
