@@ -1,3 +1,155 @@
+// import nodemailer from "nodemailer";
+// import { z } from "zod";
+
+// const schema = z.object({
+//   name: z.string().min(2),
+//   email: z.string().email(),
+//   message: z.string().min(10),
+//   topic: z.enum(["detaliczne", "hurtowe", "reklamacja", "zwrot", "inne"]),
+//   company: z.string().optional(), // honeypot
+// });
+
+// const emailMap: Record<string, string> = {
+//   // detaliczne: "robgra97@onet.pl",
+//   // hurtowe: "robert.grabowski97@gmail.com",
+//   // reklamacja: "robert.grabowskisu@gmail.com",
+//   // zwrot: "robert.grabowski97@gmail.com",
+//   // inne: "robert.grabowski97@gmail.com",
+//   detaliczne: "zamowienia@verk.sklep.pl",
+//   hurtowe: "zamowienia@internetowa-hurtownia.pl",
+//   reklamacja: "reklamacje@verkgroup.pl",
+//   zwrot: "zwroty@verkgroup.pl",
+//   inne: "zamowienia@verk.sklep.pl",
+// };
+
+// export async function POST(req: Request) {
+//   try {
+//     const contentType = req.headers.get("content-type") || "";
+
+//     let rawData: any = {};
+//     let file: File | null = null;
+
+//     // 🔥 AUTO: JSON vs FormData
+//     if (contentType.includes("application/json")) {
+//       rawData = await req.json();
+//     } else {
+//       const formData = await req.formData();
+
+//       rawData = {
+//         name: String(formData.get("name") || ""),
+//         email: String(formData.get("email") || ""),
+//         message: String(formData.get("message") || ""),
+//         topic: String(formData.get("topic") || ""),
+//         company: String(formData.get("company") || ""),
+//         locale: String(formData.get("locale") || "pl"),
+//       };
+
+//       file = formData.get("file") as File | null;
+//     }
+
+//     console.log("📩 Incoming data:", rawData);
+
+//     const parsed = schema.safeParse(rawData);
+
+//     if (!parsed.success) {
+//       console.error("❌ Zod error:", parsed.error.flatten());
+//       return new Response("Invalid data", { status: 400 });
+//     }
+
+//     const { name, email, message, topic, company } = parsed.data;
+
+//     // 🛑 honeypot
+//     if (company) {
+//       return new Response("Spam detected", { status: 200 });
+//     }
+
+//     let attachments: any[] = [];
+
+//     // 📎 file handling (only if FormData)
+//     if (file && file.size > 0) {
+//       if (file.size > 5 * 1024 * 1024) {
+//         return new Response("Plik za duży (max 5MB)", { status: 400 });
+//       }
+
+//       const allowedTypes = ["image/png", "image/jpeg", "application/pdf"];
+
+//       if (!allowedTypes.includes(file.type)) {
+//         return new Response("Niedozwolony typ pliku", { status: 400 });
+//       }
+
+//       const bytes = await file.arrayBuffer();
+//       const buffer = Buffer.from(bytes);
+
+//       attachments.push({
+//         filename: file.name,
+//         content: buffer,
+//       });
+//     }
+
+//     const recipient = emailMap[topic];
+
+//     if (!recipient) {
+//       console.error("❌ Unknown topic:", topic);
+//       return new Response("Invalid topic", { status: 400 });
+//     }
+
+//     const transporter = nodemailer.createTransport({
+//       host: process.env.SMTP_HOST,
+//       port: Number(process.env.SMTP_PORT),
+//       secure: true,
+//       auth: {
+//         user: process.env.SMTP_USER,
+//         pass: process.env.SMTP_PASS,
+//       },
+//     });
+
+//     await transporter.sendMail({
+//       from: `"Formularz kontaktowy Verk wizytówka" <${process.env.SMTP_USER}>`,
+//       to: recipient,
+//       replyTo: email,
+//       subject: `Nowa wiadomość (${topic})`,
+//       html: `
+//         <h2>Nowa wiadomość</h2>
+//         <p><strong>Imię i nazwisko:</strong> ${name}</p>
+//         <p><strong>Email:</strong> ${email}</p>
+//         <p><strong>Temat:</strong> ${topic}</p>
+//         <p><strong>Wiadomość:</strong><br/>${message}</p>
+//         ${attachments.length ? `<p><strong>Załącznik:</strong> TAK</p>` : ""}
+//       `,
+//       attachments,
+//     });
+
+//     const topicLabels: Record<string, string> = {
+//       detaliczne: "zamówienia detalicznego",
+//       hurtowe: "zamówienia hurtowego",
+//       reklamacja: "reklamacji",
+//       zwrot: "zwrotu",
+//       inne: "zapytania",
+//     };
+
+//     await transporter.sendMail({
+//       from: `"Verk Group" <${process.env.SMTP_USER}>`,
+//       to: email,
+//       subject: `Potwierdzenie zgłoszenia - ${topicLabels[topic]}`,
+//       html: `
+//     <h2>Dziękujemy za kontakt!</h2>
+//     <p>Twoja wiadomość dotycząca <strong>${topicLabels[topic]}</strong> została wysłana.</p>
+//     <p>Odezwiemy się najszybciej jak to możliwe.</p>
+
+//     <hr/>
+
+//     <p><strong>Twoja wiadomość:</strong></p>
+//     <p>${message}</p>
+//   `,
+//     });
+
+//     return new Response("OK", { status: 200 });
+//   } catch (err) {
+//     console.error("🔥 Server error:", err);
+//     return new Response("Internal Server Error", { status: 500 });
+//   }
+// }
+
 import nodemailer from "nodemailer";
 import { z } from "zod";
 
@@ -6,7 +158,8 @@ const schema = z.object({
   email: z.string().email(),
   message: z.string().min(10),
   topic: z.enum(["detaliczne", "hurtowe", "reklamacja", "zwrot", "inne"]),
-  company: z.string().optional(), // honeypot
+  company: z.string().optional(),
+  locale: z.enum(["pl", "en"]).optional(),
 });
 
 const emailMap: Record<string, string> = {
@@ -22,6 +175,50 @@ const emailMap: Record<string, string> = {
   inne: "zamowienia@verk.sklep.pl",
 };
 
+// 🌍 Tłumaczenia tematów
+const topicLabels = {
+  pl: {
+    detaliczne: "zamówienia detalicznego",
+    hurtowe: "zamówienia hurtowego",
+    reklamacja: "reklamacji",
+    zwrot: "zwrotu",
+    inne: "zapytania",
+  },
+  en: {
+    detaliczne: "retail order",
+    hurtowe: "wholesale order",
+    reklamacja: "complaint",
+    zwrot: "return",
+    inne: "inquiry",
+  },
+};
+
+// 🌍 Tłumaczenia maili
+const emailTranslations = {
+  pl: {
+    subject: (topic: string) => `Potwierdzenie zgłoszenia – ${topic}`,
+    html: (topic: string, message: string) => `
+      <h2>Dziękujemy za kontakt!</h2>
+      <p>Twoja wiadomość dotycząca <strong>${topic}</strong> została wysłana.</p>
+      <p>Odezwiemy się najszybciej jak to możliwe.</p>
+      <hr/>
+      <p><strong>Twoja wiadomość:</strong></p>
+      <p>${message}</p>
+    `,
+  },
+  en: {
+    subject: (topic: string) => `Request confirmation – ${topic}`,
+    html: (topic: string, message: string) => `
+      <h2>Thank you for contacting us!</h2>
+      <p>Your message regarding <strong>${topic}</strong> has been sent.</p>
+      <p>We will get back to you as soon as possible.</p>
+      <hr/>
+      <p><strong>Your message:</strong></p>
+      <p>${message}</p>
+    `,
+  },
+};
+
 export async function POST(req: Request) {
   try {
     const contentType = req.headers.get("content-type") || "";
@@ -29,7 +226,6 @@ export async function POST(req: Request) {
     let rawData: any = {};
     let file: File | null = null;
 
-    // 🔥 AUTO: JSON vs FormData
     if (contentType.includes("application/json")) {
       rawData = await req.json();
     } else {
@@ -41,6 +237,7 @@ export async function POST(req: Request) {
         message: String(formData.get("message") || ""),
         topic: String(formData.get("topic") || ""),
         company: String(formData.get("company") || ""),
+        locale: String(formData.get("locale") || "pl"),
       };
 
       file = formData.get("file") as File | null;
@@ -55,25 +252,23 @@ export async function POST(req: Request) {
       return new Response("Invalid data", { status: 400 });
     }
 
-    const { name, email, message, topic, company } = parsed.data;
+    const { name, email, message, topic, company, locale = "pl" } = parsed.data;
 
-    // 🛑 honeypot
     if (company) {
       return new Response("Spam detected", { status: 200 });
     }
 
     let attachments: any[] = [];
 
-    // 📎 file handling (only if FormData)
     if (file && file.size > 0) {
       if (file.size > 5 * 1024 * 1024) {
-        return new Response("Plik za duży (max 5MB)", { status: 400 });
+        return new Response("FILE_TOO_LARGE", { status: 400 });
       }
 
       const allowedTypes = ["image/png", "image/jpeg", "application/pdf"];
 
       if (!allowedTypes.includes(file.type)) {
-        return new Response("Niedozwolony typ pliku", { status: 400 });
+        return new Response("INVALID_FILE_TYPE", { status: 400 });
       }
 
       const bytes = await file.arrayBuffer();
@@ -88,7 +283,6 @@ export async function POST(req: Request) {
     const recipient = emailMap[topic];
 
     if (!recipient) {
-      console.error("❌ Unknown topic:", topic);
       return new Response("Invalid topic", { status: 400 });
     }
 
@@ -102,44 +296,47 @@ export async function POST(req: Request) {
       },
     });
 
+    const topicLabel = topicLabels[locale][topic];
+    const t = emailTranslations[locale];
+
+    // 📩 MAIL DO FIRMY
     await transporter.sendMail({
       from: `"Formularz kontaktowy Verk wizytówka" <${process.env.SMTP_USER}>`,
       to: recipient,
       replyTo: email,
-      subject: `Nowa wiadomość (${topic})`,
+      subject:
+        locale === "pl"
+          ? `Nowa wiadomość (${topicLabel})`
+          : `New message (${topicLabel})`,
       html: `
-        <h2>Nowa wiadomość</h2>
-        <p><strong>Imię i nazwisko:</strong> ${name}</p>
+        <h2>${locale === "pl" ? "Nowa wiadomość" : "New message"}</h2>
+        <p><strong>${
+          locale === "pl" ? "Imię i nazwisko" : "Full name"
+        }:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Temat:</strong> ${topic}</p>
-        <p><strong>Wiadomość:</strong><br/>${message}</p>
-        ${attachments.length ? `<p><strong>Załącznik:</strong> TAK</p>` : ""}
+        <p><strong>${
+          locale === "pl" ? "Temat" : "Topic"
+        }:</strong> ${topicLabel}</p>
+        <p><strong>${
+          locale === "pl" ? "Wiadomość" : "Message"
+        }:</strong><br/>${message}</p>
+        ${
+          attachments.length
+            ? `<p><strong>${
+                locale === "pl" ? "Załącznik" : "Attachment"
+              }:</strong> TAK</p>`
+            : ""
+        }
       `,
       attachments,
     });
 
-    const topicLabels: Record<string, string> = {
-      detaliczne: "zamówienia detalicznego",
-      hurtowe: "zamówienia hurtowego",
-      reklamacja: "reklamacji",
-      zwrot: "zwrotu",
-      inne: "zapytania",
-    };
-
+    // 📬 AUTORESPONDER
     await transporter.sendMail({
       from: `"Verk Group" <${process.env.SMTP_USER}>`,
       to: email,
-      subject: `Potwierdzenie zgłoszenia - ${topicLabels[topic]}`,
-      html: `
-    <h2>Dziękujemy za kontakt!</h2>
-    <p>Twoja wiadomość dotycząca <strong>${topicLabels[topic]}</strong> została wysłana.</p>
-    <p>Odezwiemy się najszybciej jak to możliwe.</p>
-
-    <hr/>
-
-    <p><strong>Twoja wiadomość:</strong></p>
-    <p>${message}</p>
-  `,
+      subject: t.subject(topicLabel),
+      html: t.html(topicLabel, message),
     });
 
     return new Response("OK", { status: 200 });

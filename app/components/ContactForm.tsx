@@ -1,11 +1,11 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useState } from "react";
-import { set } from "zod";
 
 export default function ContactForm() {
   const t = useTranslations("ContactPage");
+  const locale = useLocale();
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
   const [fileName, setFileName] = useState("");
@@ -15,16 +15,9 @@ export default function ContactForm() {
     setLoading(true);
 
     const form = e.currentTarget;
-    const data = new FormData(form);
-    const formData = new FormData(e.currentTarget);
 
-    const body = {
-      name: data.get("name"),
-      email: data.get("email"),
-      message: data.get("message"),
-      topic: data.get("topic"),
-      company: data.get("company"), // honeypot
-    };
+    const formData = new FormData(e.currentTarget);
+    formData.append("locale", locale);
 
     const res = await fetch("/api/contact", {
       method: "POST",
@@ -40,6 +33,7 @@ export default function ContactForm() {
         setStatus("");
       }, 3000);
       form.reset();
+      setFileName("");
     } else {
       setStatus(t("formStatusError"));
       setTimeout(() => {
