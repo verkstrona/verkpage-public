@@ -145,7 +145,13 @@ export default function ContactForm() {
       )}
 
       {status && (
-        <div className="absolute grid items-center justify-center w-full  h-full top-0 left-0 contact-status">
+        <div
+          className="absolute grid items-center justify-center w-full  h-full top-0 left-0 contact-status"
+          onClick={() => {
+            setStatus("");
+            setStatusDisclaimer("");
+          }}
+        >
           <div>
             <h3 className="text-center">{status}</h3>
             {statusDisclaimer && (
