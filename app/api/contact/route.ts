@@ -118,6 +118,30 @@ export async function POST(req: Request) {
       attachments,
     });
 
+    const topicLabels: Record<string, string> = {
+      detaliczne: "zamówienia detalicznego",
+      hurtowe: "zamówienia hurtowego",
+      reklamacja: "reklamacji",
+      zwrot: "zwrotu",
+      inne: "zapytania",
+    };
+
+    await transporter.sendMail({
+      from: `"Verk Group" <${process.env.SMTP_USER}>`,
+      to: email,
+      subject: `Potwierdzenie zgłoszenia - ${topicLabels[topic]}`,
+      html: `
+    <h2>Dziękujemy za kontakt!</h2>
+    <p>Twoja wiadomość dotycząca <strong>${topicLabels[topic]}</strong> została wysłana.</p>
+    <p>Odezwiemy się najszybciej jak to możliwe.</p>
+
+    <hr/>
+
+    <p><strong>Twoja wiadomość:</strong></p>
+    <p>${message}</p>
+  `,
+    });
+
     return new Response("OK", { status: 200 });
   } catch (err) {
     console.error("🔥 Server error:", err);
