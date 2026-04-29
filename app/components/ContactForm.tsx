@@ -2,12 +2,14 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import { useState } from "react";
+import { set } from "zod";
 
 export default function ContactForm() {
   const t = useTranslations("ContactPage");
   const locale = useLocale();
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
+  const [statusDisclaimer, setStatusDisclaimer] = useState("");
   const [fileName, setFileName] = useState("");
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -28,10 +30,12 @@ export default function ContactForm() {
     setLoading(false);
 
     if (res.ok) {
-      setStatus(t("formStatusOk"));
+      setStatus(`${t("formStatusOk")}`);
+      setStatusDisclaimer(`${t("formStatusOk2")}`);
       setTimeout(() => {
         setStatus("");
-      }, 3000);
+        setStatusDisclaimer("");
+      }, 8000);
       form.reset();
       setFileName("");
     } else {
@@ -141,8 +145,15 @@ export default function ContactForm() {
       )}
 
       {status && (
-        <div className="absolute grid items-center justify-center w-full h-full top-0 left-0 contact-status">
-          <p>{status}</p>
+        <div className="absolute grid items-center justify-center w-full  h-full top-0 left-0 contact-status">
+          <div>
+            <h3 className="text-center">{status}</h3>
+            {statusDisclaimer && (
+              <p className=" opacity-90 mt-8 whitespace-pre-line text-center">
+                {statusDisclaimer}
+              </p>
+            )}
+          </div>
         </div>
       )}
     </form>

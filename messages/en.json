@@ -160,6 +160,7 @@
     "formSending": "Sending...",
     "formSend": "Send your message",
     "formStatusOk": "Message sent successfully ✅",
+    "formStatusOk2": "We have sent a confirmation to the specified email address. If you do not receive the message within a few minutes, please check your spam folder or ensure the address is entered correctly.",
     "formStatusError": "Sending error ❌ Check all the fields and make sure the attachment (if any) is less than 5 MB",
     "formFileButton": "Add attachment",
     "formFilePlaceholder": "File not choosen",

@@ -160,6 +160,7 @@
     "formSending": "Wysyłanie...",
     "formSend": "Wyślij swoją wiadomość",
     "formStatusOk": "Wiadomość wysłana pomyślnie ✅",
+    "formStatusOk2": "*Na podany adres e-mail wysłaliśmy potwierdzenie. \nJeśli nie otrzymasz wiadomości w ciągu kilku minut, sprawdź folder SPAM lub upewnij się, że adres został wpisany poprawnie.",
     "formStatusError": "Błąd wysyłki ❌ Sprawdź wszystkie pola oraz czy załącznik (jeśli jest) waży mniej niż 5 MB",
     "formFileButton": "Dodaj załącznik",
     "formFilePlaceholder": "Nie wybrano pliku",
