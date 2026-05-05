@@ -31,7 +31,7 @@ function MobileNav() {
             <li onClick={() => setIsOpen(!isOpen)}>
               <Link href="/about-us"> {t("about")} </Link>
             </li>
-            <li>
+            <li onClick={() => setIsOpen(!isOpen)}>
               <Link href="/our-brands"> {t("brands")} </Link>
             </li>
             <li onClick={() => setIsOpen(!isOpen)}>
