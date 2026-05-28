@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
+import Script from "next/script";
 
 import HeaderReveal from "../components/HeaderReveal";
 import Navigation from "../components/Navigation";
@@ -62,6 +63,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function RootLayout({ children, params }: Props) {
   const { locale } = await params;
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();
@@ -76,11 +78,31 @@ export default async function RootLayout({ children, params }: Props) {
                 <Navigation />
               </HeaderReveal>
               {children}
+
               <CookieBanner />
               <Footer />
             </CookieProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
+        {/* Google Analytics */}
+        {GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '${GA_ID}');
+      `}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );
