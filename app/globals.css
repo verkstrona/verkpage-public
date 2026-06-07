@@ -743,6 +743,10 @@ footer li:hover {
   align-items: center;
 }
 
+.flag-p {
+  font-size: 1.2rem;
+}
+
 @media (max-width: 60em) {
   .howwework-box,
   .wherewework-box {
@@ -758,14 +762,15 @@ footer li:hover {
     margin: 0 auto;
   }
 }
-.wherewework-box img {
-  box-shadow: var(--box-shadow);
+
+.wherewework-box .flagbox {
+  /* box-shadow: var(--box-shadow); */
   transition: all 0.5s;
   transform: scale(1.0001);
   opacity: 85%;
 }
 
-.wherewework-box img:hover {
+.flagbox:hover {
   transform: scale(1.05);
   opacity: 100%;
 }

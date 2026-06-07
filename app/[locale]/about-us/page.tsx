@@ -79,6 +79,9 @@ export default function AboutPage() {
           <RevealingSections goinUp={false}>
             <p>{t("description1")}</p>
             <p>{t("description2")}</p>
+            <p>{t("description3")}</p>
+            <p>{t("description4")}</p>
+            <p className="pb-8">{t("description5")}</p>
           </RevealingSections>
         </div>
         <Image
@@ -120,23 +123,135 @@ export default function AboutPage() {
           <div className="container">
             <h2 className="opacity-75 pb-12">{t("wherewesaleHeading")}</h2>
             <div className="wherewework-box">
-              <div className="grid grid-cols-4 gap-6 max-[960px]:grid-cols-8 max-[960px]:gap-2">
-                <Image alt={t("flagalt")} src={flagcz} />
-                <Image alt={t("flagalt")} src={flagnl} />
-                <Image alt={t("flagalt")} src={flagsk} />
-                <Image alt={t("flagalt")} src={flagsv} />
-                <Image alt={t("flagalt")} src={flagde} />
-                <Image alt={t("flagalt")} src={flagpl} />
-                <Image alt={t("flagalt")} src={flagee} />
-                <Image alt={t("flagalt")} src={flages} />
-                <Image alt={t("flagalt")} src={flagfr} />
-                <Image alt={t("flagalt")} src={flagit} />
-                <Image alt={t("flagalt")} src={flagro} />
-                <Image alt={t("flagalt")} src={flaglt} />
-                <Image alt={t("flagalt")} src={flaglv} />
-                <Image alt={t("flagalt")} src={flagbg} />
-                <Image alt={t("flagalt")} src={flaghu} />
-                <Image alt={t("flagalt")} src={flagct} />
+              <div className="grid grid-cols-4 gap-6 max-[1150px]:grid-cols-3 max-[960px]:grid-cols-4 max-[960px]:gap-6 max-[550px]:grid-cols-2">
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flagcz}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flagcz")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flagnl}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flagnl")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flagsk}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flagsk")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flagsv}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flagsv")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flagde}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flagde")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flagpl}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flagpl")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flagee}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flagee")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flages}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flages")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flagfr}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flagfr")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flagit}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flagit")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flagro}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flagro")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flaglt}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flaglt")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flaglv}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flaglv")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flagbg}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flagbg")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flaghu}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flaghu")}</p>
+                </div>
+                <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
+                  <Image
+                    alt={t("flagalt")}
+                    src={flagct}
+                    className="rounded-full"
+                  />
+                  <p className="flag-p">{t("flagct")}</p>
+                </div>
               </div>
               <div>
                 <div className="px-4 pt-12 max-[960px]:pt-0">
