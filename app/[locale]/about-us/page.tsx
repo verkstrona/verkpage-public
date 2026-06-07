@@ -123,7 +123,7 @@ export default function AboutPage() {
           <div className="container">
             <h2 className="opacity-75 pb-12">{t("wherewesaleHeading")}</h2>
             <div className="wherewework-box">
-              <div className="grid grid-cols-4 gap-6 max-[1150px]:grid-cols-3 max-[960px]:grid-cols-4 max-[960px]:gap-6 max-[550px]:grid-cols-2">
+              <div className="grid grid-cols-4 gap-4 max-[1150px]:grid-cols-3 max-[960px]:grid-cols-4 max-[960px]:gap-6 pr-12 max-[961px]:pr-0 max-[961px]:pb-12 max-[550px]:grid-cols-2 ">
                 <div className="grid grid-cols-[35fr_65fr] items-center gap-2 p-4 border border-gray-400/20 rounded-2xl w-full flagbox">
                   <Image
                     alt={t("flagalt")}
@@ -253,9 +253,9 @@ export default function AboutPage() {
                   <p className="flag-p">{t("flagct")}</p>
                 </div>
               </div>
-              <div>
-                <div className="px-4 pt-12 max-[960px]:pt-0">
-                  <div className="py-8 text-justify max-[960px]:py-4">
+              <div className="pl-12 max-[961px]:pl-0 max-[960px]:pt-12 border-l border-gray-400/20 max-[961px]:border-t max-[961px]:border-l-0">
+                <div className="max-[961px]:px-4 pt-12 max-[960px]:pt-0">
+                  <div className="py-8 text-justify max-[960px]:py-4 ">
                     <p className="pb-4">{t("wherewesaleDescription1")}</p>
                     <p className="pb-4">{t("wherewesaleDescription2")}</p>
                   </div>
