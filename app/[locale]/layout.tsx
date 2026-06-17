@@ -33,29 +33,68 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     namespace: "Metadata",
   });
 
+  // return {
+  //   title: {
+  //     default: t("title"),
+  //     template: `%s | Verk Group`,
+  //   },
+  //   description: t("description"),
+  //   keywords: t("keywords"),
+  //   // SEO i i18n
+  //   alternates: {
+  //     languages: {
+  //       pl: "/pl",
+  //       en: "/en",
+  //     },
+  //   },
+  //   icons: {
+  //     icon: "/icon.png",
+  //   },
+
+  //   // Open Graph (social media)
+  //   openGraph: {
+  //     title: t("title"),
+  //     description: t("description"),
+  //     locale: locale,
+  //     type: "website",
+  //   },
+  // };
   return {
+    metadataBase: new URL("https://www.verk.pl"),
+
     title: {
       default: t("title"),
       template: `%s | Verk Group`,
     },
+
     description: t("description"),
     keywords: t("keywords"),
-    // SEO i i18n
+
+    robots: {
+      index: true,
+      follow: true,
+    },
+
     alternates: {
+      canonical:
+        locale === "en" ? "https://www.verk.pl/en" : "https://www.verk.pl",
+
       languages: {
-        pl: "/pl",
-        en: "/en",
+        pl: "https://www.verk.pl",
+        en: "https://www.verk.pl/en",
       },
     },
+
     icons: {
       icon: "/icon.png",
     },
 
-    // Open Graph (social media)
     openGraph: {
       title: t("title"),
       description: t("description"),
-      locale: locale,
+      url: locale === "en" ? "https://www.verk.pl/en" : "https://www.verk.pl",
+      siteName: "Verk Group",
+      locale,
       type: "website",
     },
   };
@@ -70,6 +109,20 @@ export default async function RootLayout({ children, params }: Props) {
   }
   return (
     <html lang={locale}>
+      {/* <head>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/icon.png" />
+        <link rel="canonical" href="https://verk.pl" />
+      </head> */}
+      <head>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/icon.png" />
+      </head>
       <body className={`${poppins.variable} antialiased`}>
         <NextIntlClientProvider>
           <ThemeProvider>
