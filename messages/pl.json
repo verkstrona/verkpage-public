@@ -27,8 +27,15 @@
   },
   "CookieBanner": {
     "message": "Ta strona korzysta z cookies.",
-    "accept": "Akceptuj",
-    "decline": "Odrzuć"
+    "essential": "Niezbędne",
+    "essentialDescription": "Niektóre pliki cookies są niezbędne do prawidłowego działania strony i nie można ich wyłączyć.",
+    "analytics": "Analityczne",
+    "analyticsDescription": "Pomagają nam zrozumieć, jak korzystasz ze strony, abyśmy mogli ją ulepszać.",
+    "maps": "Mapy",
+    "mapsDescription": "Umożliwiają wyświetlanie mapy z lokalizacją firmy.",
+    "acceptAll": "Akceptuj wszystkie",
+    "acceptSelected": "Akceptuj wybrane",
+    "acceptEssential": "Akceptuj tylko niezbędne"
   },
   "Map": {
     "title": "Mapa jest zablokowana do czasu zaakceptowania cookies."

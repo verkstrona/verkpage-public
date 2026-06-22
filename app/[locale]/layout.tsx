@@ -10,9 +10,11 @@ import { ThemeProvider } from "../context/ThemeContext";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Footer from "../components/Footer";
-import { CookieProvider } from "../context/CookieContext";
+import { CookieProvider, useCookie } from "../context/CookieContext";
 import CookieBanner from "../components/CookieBanner";
 import { getTranslations } from "next-intl/server";
+import GoogleAnalytics from "../components/GoogleAnalytics";
+import CookieSettingsButton from "../components/CookieButton";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -102,7 +104,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function RootLayout({ children, params }: Props) {
   const { locale } = await params;
-  const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
   if (!hasLocale(routing.locales, locale)) {
     notFound();
@@ -133,29 +134,13 @@ export default async function RootLayout({ children, params }: Props) {
               {children}
 
               <CookieBanner />
+              <CookieSettingsButton />
               <Footer />
+              {/* Google Analytics */}
+              <GoogleAnalytics />
             </CookieProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
-        {/* Google Analytics */}
-        {GA_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-              strategy="afterInteractive"
-            />
-
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', '${GA_ID}');
-      `}
-            </Script>
-          </>
-        )}
       </body>
     </html>
   );

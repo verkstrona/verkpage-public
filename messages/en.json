@@ -27,8 +27,15 @@
   },
   "CookieBanner": {
     "message": "This site uses cookies.",
-    "accept": "Accept",
-    "decline": "Decline"
+    "essential": "Essential",
+    "essentialDescription": "Some cookies are essential for the proper functioning of the site and cannot be disabled.",
+    "analytics": "Analytics",
+    "analyticsDescription": "They help us understand how you use the site so we can improve it.",
+    "maps": "Maps",
+    "mapsDescription": "They enable the display of maps with the company's location.",
+    "acceptAll": "Accept all",
+    "acceptSelected": "Accept selected",
+    "acceptEssential": "Accept essential"
   },
   "Map": {
     "title": "The map is blocked until you accept cookies."

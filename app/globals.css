@@ -95,26 +95,51 @@ Base	5%	10%	15%	20%	25%	30%	35%	40%	45%	50%	55%	60%	65%	70%	75%	80%	85%	90%	95%
   background-color: var(--accent-color);
   color: var(--background-color);
 }
+.cookie-btn {
+  background-color: var(--font-color);
+
+  color: var(--background-color);
+  color: var(--background-color);
+}
 .btn-accept,
-.btn-decline {
+.btn-decline,
+.btn-selected {
   cursor: pointer;
   transition: all 0.5s;
-  border: 0.2rem solid var(--background-color);
+  font-size: 1.6rem;
   font-weight: 600;
+  padding: 0.8rem 1.6rem;
 }
 .btn-accept {
   background-color: var(--background-color);
   color: var(--accent-color);
+  border: 0.2rem solid var(--background-color);
 }
 .btn-decline {
   background-color: transparent;
   color: var(--background-color);
+  border: 0.2rem solid var(--background-color);
+}
+.btn-selected {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border-bottom: 0.2rem solid var(--background-color);
 }
 
 .btn-accept:hover,
-.btn-decline:hover {
+.btn-decline:hover,
+.btn-selected:hover {
   opacity: 80%;
-  opacity: 80%;
+}
+
+@media (max-width: 27em) {
+  .btn-accept,
+  .btn-decline,
+  .btn-selected {
+    font-size: 1.4rem;
+    padding: 0.6rem 1.2rem;
+    padding: 0.6rem 1.2rem;
+  }
 }
 
 .map-p {
@@ -1023,4 +1048,87 @@ footer li:hover {
   font-size: 1.2rem;
   list-style-type: disc;
   padding-left: 3.2rem;
+}
+
+/* SWITCH */
+
+/* From Uiverse.io by alexruix */
+/* The switch - the box around the slider */
+.switch {
+  font-size: 1.7rem;
+  position: relative;
+  display: inline-block;
+  width: 2.2em;
+  height: 1.5em;
+}
+
+.switch-disabled {
+  opacity: 0.75;
+  filter: grayscale(50%);
+  pointer-events: none;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #b0b0b0;
+  border: 0.1rem solid #b0b0b0;
+  transition: 0.4s;
+  border-radius: 3.2rem;
+  outline: none;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  outline: 0.2rem solid #b0b0b0;
+  left: -0.1rem;
+  bottom: -0.1rem;
+  background-color: #fff;
+  transition: transform 0.25s ease-in-out 0s;
+}
+
+.slider-icon {
+  opacity: 0;
+  height: 1.2rem;
+  width: 1.2rem;
+  stroke-width: 0.8rem;
+  position: absolute;
+  z-index: 999;
+  stroke: #222222;
+  right: 60%;
+  top: 30%;
+  transition:
+    right ease-in-out 0.3s,
+    opacity ease-in-out 0.15s;
+}
+
+input:checked + .slider {
+  background-color: #222222;
+}
+
+input:checked + .slider .slider-icon {
+  opacity: 1;
+  right: 20%;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.5rem);
+
+  outline-color: #181818;
 }

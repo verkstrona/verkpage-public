@@ -8,7 +8,7 @@ export default function Map() {
   const { consent, loaded } = useCookie();
   const t = useTranslations("Map");
 
-  if (!consent) {
+  if (!consent.maps) {
     return (
       <div className="p-4 text-center">
         <p className="map-p">*{t("title")}</p>
