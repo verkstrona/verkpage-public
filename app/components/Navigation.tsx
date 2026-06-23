@@ -3,7 +3,7 @@ import LocaleSwitcher from "./LocaleSwitcher";
 import ThemeToggle from "./ThemeToggle";
 import MobileNav from "./NavMobile";
 import NavDesktop from "./NavDesktop";
-import IMGverk from "@/public/LogoVerk.png";
+import IMGverk from "@/public/LogoVerkDark.png";
 import IMGverkwhite from "@/public/LogoVerkWhite.png";
 import IMGverkdark from "@/public/LogoVerkDark.png";
 import Image from "next/image";
@@ -11,12 +11,12 @@ import Image from "next/image";
 export default function Navigation() {
   return (
     <nav className="navigation">
-      <div>
+      <div className="nav-padding">
         <Link href="/" className="font-bold">
           <Image
             src={IMGverk}
             alt="Logo Verk Group"
-            className="max-h-[50px] w-auto"
+            className="max-h-[60px] w-auto"
           />
           {/* <Image
             src={IMGverkwhite}
@@ -30,13 +30,13 @@ export default function Navigation() {
           /> */}
         </Link>
       </div>
-      <div className="max-[920px]:hidden max-[980px]:text-3xl">
+      <div className="max-[920px]:hidden max-[980px]:text-3xl ">
         <NavDesktop />
       </div>
-      <div className="flex items-center justify-items-center gap-8">
+      <div className="flex items-center justify-items-center gap-8 nav-padding">
         <ThemeToggle />
         <LocaleSwitcher />
-        <div className="min-[920px]:hidden">
+        <div className="min-[920px]:hidden nav-padding">
           <MobileNav />
         </div>
       </div>

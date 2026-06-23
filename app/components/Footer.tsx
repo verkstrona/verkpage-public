@@ -1,5 +1,5 @@
 "use client";
-import IMGverk from "@/public/LogoVerk.png";
+import IMGverk from "@/public/LogoVerkDark.png";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";

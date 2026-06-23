@@ -89,6 +89,7 @@ Base	5%	10%	15%	20%	25%	30%	35%	40%	45%	50%	55%	60%	65%	70%	75%	80%	85%	90%	95%
   width: 2.4rem;
   height: 2.4rem;
   fill: var(--background-color);
+  fill: #0b0b0d;
 }
 
 .bg-cookies {
@@ -258,14 +259,16 @@ p {
 
 .navigation {
   height: 8rem;
-  color: var(--font-color);
-  background-color: var(--accent-opa);
-  background-color: var(--background-color);
+  color: #f8f8f8;
+  background-color: #0b0b0d;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
   font-size: 2.4rem;
+}
+
+.nav-padding {
+  padding: 2rem;
 }
 
 .navigation ul {
@@ -302,6 +305,11 @@ p {
   min-width: 20rem;
 }
 
+.navbtn-toggle {
+  background-color: #0b0b0d;
+  color: #f8f8f8;
+  color: #f8f8f8;
+}
 .navItemRev {
   animation: revfromright 0.5s ease-out;
   animation: revfromright 0.5s ease-out;
@@ -339,12 +347,13 @@ p {
 
 .navbtn {
   transition: all 0.5s;
-  fill: var(--font-color);
+  fill: #f8f8f8;
   width: 100%;
 }
 
 .navbtn svg {
-  fill: var(--font-color);
+  /* fill: var(--font-color); */
+  fill: #f8f8f8;
   transition: all 0.5s;
   height: 3.2rem;
   width: 3.6rem;
@@ -695,6 +704,8 @@ footer {
   padding: 1.8rem;
   padding-top: 9.2rem;
   padding-bottom: 2.4rem;
+  background-color: #0b0b0d;
+  color: #f8f8f8;
 }
 
 footer li {
@@ -1098,7 +1109,8 @@ footer li:hover {
   border-radius: 50%;
   outline: 0.2rem solid #b0b0b0;
   left: -0.1rem;
-  bottom: -0.1rem;
+  bottom: 0;
+  bottom: 0.15rem;
   background-color: #fff;
   transition: transform 0.25s ease-in-out 0s;
 }

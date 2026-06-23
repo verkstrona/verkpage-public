@@ -21,7 +21,7 @@ export default function ButtonLinkNav({
       </button>
       {isClicked && (
         <div
-          className={`absolute z-10 top-15 left-0 min-h-40 ${width} flex flex-col items-center justify-center gap-8  px-6 background-col py-4 w-full`}
+          className={`absolute z-10 top-15 left-0 min-h-40 ${width} flex flex-col items-center justify-center gap-8  px-6 background-col py-4 w-full navbtn-toggle`}
           onClick={handleClick}
         >
           <Link
