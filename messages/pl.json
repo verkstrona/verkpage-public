@@ -49,8 +49,11 @@
     "shop": "Sklep",
     "warehouse": "internetowa-hurtownia.pl",
     "privacy": "Polityka Prywatności",
-    "phone1": "Tel. kom:",
-    "phone2": "Tel. stacjonarny:"
+    "phone1": "(wew. 1)",
+    "phone2": "(wew. 2)",
+    "phone3": "WhatsApp, Telegram, Viber",
+    "retail": "Sklep detaliczny",
+    "wholesale": "Hurtownia"
   },
   "HomePage": {
     "title": "Verk Group",

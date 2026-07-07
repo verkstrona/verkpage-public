@@ -708,13 +708,26 @@ footer {
   color: #f8f8f8;
 }
 
-footer li {
+footer a {
   font-size: 1.6rem;
   transition: all 0.5s;
 }
 
-footer li:hover {
+footer a:hover {
   opacity: 80%;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+footer svg {
+  margin-right: 0.4rem;
+}
+
+footer li span {
+  font-size: 1.2rem;
 }
 
 @media (max-width: 48em) {
