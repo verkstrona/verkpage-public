@@ -47,7 +47,7 @@ export default function Footer() {
             <li className="flex gap-2 items-center text-3xl">
               <BiSolidPhone className="fill-[#cd1c18]" />
               <Link href="tel:+48888055550" className="opacity-80">
-                +48 888 055 550 {t("phone1")}
+                +48 888 055 550 {t("phone2")}
               </Link>
             </li>
             <li className="flex gap-2 items-center">
@@ -78,7 +78,7 @@ export default function Footer() {
             <li className="flex gap-2 items-center">
               <BiSolidPhoneCall className="fill-[#cd1c18] text-3xl" />
               <Link href="tel:+48226709010" className="opacity-80">
-                +48 22 670 90 10 {t("phone2")}
+                +48 22 670 90 10 {t("phone1")}
               </Link>
             </li>
           </ul>
