@@ -53,7 +53,7 @@ export default function Footer() {
             <li className="flex gap-2 items-center">
               <HiDevicePhoneMobile className="self-start fill-[#cd1c18] text-3xl" />
               <Link href="tel:+48226709010" className="opacity-80">
-                +48 666 670 672<br></br>
+                +48 666 660 672<br></br>
                 <span className="text-sm">{t("phone3")}</span>
               </Link>
             </li>
